@@ -1,0 +1,2529 @@
+{
+ "figmaFile": "Eo7DWsANnIc4IbnsYmrZX9",
+ "assets": [
+  {
+   "key": "a0",
+   "file": "svgs.generated.ts#a0",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A08"
+   ]
+  },
+  {
+   "key": "a9",
+   "file": "svgs.generated.ts#a9",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A08"
+   ]
+  },
+  {
+   "key": "aIIcon",
+   "file": "svgs.generated.ts#aIIcon",
+   "figmaName": "AI icon",
+   "figmaNodes": [
+    "968:4860"
+   ],
+   "screens": [
+    "B10"
+   ]
+  },
+  {
+   "key": "add1",
+   "file": "svgs.generated.ts#add1",
+   "figmaName": "add 1",
+   "figmaNodes": [
+    "I881:4672;334:4425;339:4054"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "add12",
+   "file": "svgs.generated.ts#add12",
+   "figmaName": "add 1",
+   "figmaNodes": [
+    "I881:4673;334:4425;339:4048"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "add13",
+   "file": "svgs.generated.ts#add13",
+   "figmaName": "add 1",
+   "figmaNodes": [
+    "I881:4698;455:8616;339:4054"
+   ],
+   "screens": [
+    "D03"
+   ]
+  },
+  {
+   "key": "arrowUp",
+   "file": "svgs.generated.ts#arrowUp",
+   "figmaName": "Arrow up",
+   "figmaNodes": [
+    "888:522"
+   ],
+   "screens": [
+    "B01"
+   ]
+  },
+  {
+   "key": "background",
+   "file": "svgs.generated.ts#background",
+   "figmaName": "Background",
+   "figmaNodes": [
+    "881:4935",
+    "881:4999",
+    "881:4967",
+    "881:5030"
+   ],
+   "screens": [
+    "C04",
+    "C05",
+    "C06",
+    "C07"
+   ]
+  },
+  {
+   "key": "blur",
+   "file": "svgs.generated.ts#blur",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "F04"
+   ]
+  },
+  {
+   "key": "close",
+   "file": "svgs.generated.ts#close",
+   "figmaName": "Close",
+   "figmaNodes": [
+    "I962:6343;947:4023;947:4016",
+    "I962:6418;947:4191;947:4016",
+    "I962:6630;947:4023;947:4016",
+    "I962:6705;947:4191;947:4016",
+    "I962:6917;947:4023;947:4016",
+    "I962:6992;947:4191;947:4016",
+    "I965:4775;965:4613;947:4016",
+    "I966:4881;966:4742;947:4016"
+   ],
+   "screens": [
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09"
+   ]
+  },
+  {
+   "key": "delete",
+   "file": "svgs.generated.ts#delete",
+   "figmaName": "Delete",
+   "figmaNodes": [
+    "73:339"
+   ],
+   "screens": [
+    "A08"
+   ]
+  },
+  {
+   "key": "deleteButton",
+   "file": "svgs.generated.ts#deleteButton",
+   "figmaName": "Delete-Button",
+   "figmaNodes": [
+    "881:3581",
+    "881:4436"
+   ],
+   "screens": [
+    "A06",
+    "F02"
+   ]
+  },
+  {
+   "key": "dictation",
+   "file": "svgs.generated.ts#dictation",
+   "figmaName": "Dictation",
+   "figmaNodes": [
+    "881:3558",
+    "881:4413"
+   ],
+   "screens": [
+    "A06",
+    "F02"
+   ]
+  },
+  {
+   "key": "edit",
+   "file": "svgs.generated.ts#edit",
+   "figmaName": "Edit",
+   "figmaNodes": [
+    "I966:4881;966:4755;966:4739",
+    "I966:4881;966:4761;966:4739",
+    "I966:4881;966:4767;966:4739"
+   ],
+   "screens": [
+    "B09"
+   ]
+  },
+  {
+   "key": "ellipse43",
+   "file": "images/ellipse43.png",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A15"
+   ]
+  },
+  {
+   "key": "ellipse44",
+   "file": "svgs.generated.ts#ellipse44",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A15"
+   ]
+  },
+  {
+   "key": "ellipse58",
+   "file": "svgs.generated.ts#ellipse58",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A02"
+   ]
+  },
+  {
+   "key": "ellipse582",
+   "file": "svgs.generated.ts#ellipse582",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A03",
+    "A04"
+   ]
+  },
+  {
+   "key": "ellipse583",
+   "file": "svgs.generated.ts#ellipse583",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A15"
+   ]
+  },
+  {
+   "key": "ellipse59",
+   "file": "svgs.generated.ts#ellipse59",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A02",
+    "A03",
+    "A04"
+   ]
+  },
+  {
+   "key": "ellipse592",
+   "file": "svgs.generated.ts#ellipse592",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A15"
+   ]
+  },
+  {
+   "key": "ellipse65",
+   "file": "svgs.generated.ts#ellipse65",
+   "figmaName": null,
+   "figmaNodes": [
+    "I881:4688;455:8615"
+   ],
+   "screens": [
+    "D03"
+   ]
+  },
+  {
+   "key": "ellipse69",
+   "file": "images/ellipse69.png",
+   "figmaName": null,
+   "figmaNodes": [
+    "881:3501"
+   ],
+   "screens": [
+    "G01"
+   ]
+  },
+  {
+   "key": "emoji",
+   "file": "svgs.generated.ts#emoji",
+   "figmaName": "Emoji",
+   "figmaNodes": [
+    "881:3559",
+    "881:4414"
+   ],
+   "screens": [
+    "A06",
+    "F02"
+   ]
+  },
+  {
+   "key": "folderCard",
+   "file": "svgs.generated.ts#folderCard",
+   "figmaName": "Folder card",
+   "figmaNodes": [
+    "881:4688"
+   ],
+   "screens": [
+    "D03"
+   ]
+  },
+  {
+   "key": "folderCard2",
+   "file": "svgs.generated.ts#folderCard2",
+   "figmaName": "Folder card",
+   "figmaNodes": [
+    "881:4697"
+   ],
+   "screens": [
+    "D03"
+   ]
+  },
+  {
+   "key": "folderCard3",
+   "file": "svgs.generated.ts#folderCard3",
+   "figmaName": "Folder card",
+   "figmaNodes": [
+    "881:4698"
+   ],
+   "screens": [
+    "D03"
+   ]
+  },
+  {
+   "key": "frame1686560378",
+   "file": "svgs.generated.ts#frame1686560378",
+   "figmaName": null,
+   "figmaNodes": [
+    "881:5078",
+    "881:5120"
+   ],
+   "screens": [
+    "F06",
+    "F07"
+   ]
+  },
+  {
+   "key": "group",
+   "file": "svgs.generated.ts#group",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "I881:3525;263:4838;108:611",
+    "I881:3550;263:4838;108:611"
+   ],
+   "screens": [
+    "A05",
+    "A06"
+   ]
+  },
+  {
+   "key": "group1",
+   "file": "svgs.generated.ts#group1",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "881:4250"
+   ],
+   "screens": [
+    "C02"
+   ]
+  },
+  {
+   "key": "group112",
+   "file": "svgs.generated.ts#group112",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "D07"
+   ]
+  },
+  {
+   "key": "group114",
+   "file": "svgs.generated.ts#group114",
+   "figmaName": null,
+   "figmaNodes": [
+    "881:4905"
+   ],
+   "screens": [
+    "E01"
+   ]
+  },
+  {
+   "key": "group116",
+   "file": "svgs.generated.ts#group116",
+   "figmaName": null,
+   "figmaNodes": [
+    "881:5033",
+    "881:4708"
+   ],
+   "screens": [
+    "C07",
+    "D04"
+   ]
+  },
+  {
+   "key": "group12",
+   "file": "svgs.generated.ts#group12",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "538:4064"
+   ],
+   "screens": [
+    "F08"
+   ]
+  },
+  {
+   "key": "group124",
+   "file": "svgs.generated.ts#group124",
+   "figmaName": null,
+   "figmaNodes": [
+    "881:4231"
+   ],
+   "screens": [
+    "D01"
+   ]
+  },
+  {
+   "key": "group2",
+   "file": "svgs.generated.ts#group2",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "327:3278",
+    "I881:3984;527:15065;327:3278",
+    "I881:4666;334:4425;327:3278"
+   ],
+   "screens": [
+    "A12",
+    "A14",
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "C02",
+    "C03",
+    "D01",
+    "D02",
+    "D03",
+    "D05",
+    "D06",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "E01",
+    "F01",
+    "F04",
+    "F05",
+    "F06",
+    "F08",
+    "G01"
+   ]
+  },
+  {
+   "key": "group22",
+   "file": "svgs.generated.ts#group22",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "I881:4662;334:4425;327:3301"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "group23",
+   "file": "svgs.generated.ts#group23",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "538:4070"
+   ],
+   "screens": [
+    "F08"
+   ]
+  },
+  {
+   "key": "group3",
+   "file": "svgs.generated.ts#group3",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "group32",
+   "file": "svgs.generated.ts#group32",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "I881:4663;334:4425;327:3266"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "group4",
+   "file": "svgs.generated.ts#group4",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "I881:4664;334:4425;327:3252"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "group5",
+   "file": "svgs.generated.ts#group5",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "I881:4667;334:4425;327:4107"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "group6",
+   "file": "svgs.generated.ts#group6",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "I881:4669;334:4425;339:4238"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "group7",
+   "file": "svgs.generated.ts#group7",
+   "figmaName": "Group",
+   "figmaNodes": [
+    "I881:4670;334:4425;327:4124"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "group74",
+   "file": "svgs.generated.ts#group74",
+   "figmaName": null,
+   "figmaNodes": [
+    "I881:3526;263:4838;258:3993",
+    "I881:3551;263:4838;258:3993"
+   ],
+   "screens": [
+    "A05",
+    "A06"
+   ]
+  },
+  {
+   "key": "group98",
+   "file": "svgs.generated.ts#group98",
+   "figmaName": null,
+   "figmaNodes": [
+    "881:4915"
+   ],
+   "screens": [
+    "E01"
+   ]
+  },
+  {
+   "key": "healthcare1",
+   "file": "svgs.generated.ts#healthcare1",
+   "figmaName": "healthcare 1",
+   "figmaNodes": [
+    "I881:4668;334:4425;327:4241"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "iMG09901",
+   "file": "images/iMG09901.jpg",
+   "figmaName": "IMG_0990 1",
+   "figmaNodes": [
+    "881:4794"
+   ],
+   "screens": [
+    "D07"
+   ]
+  },
+  {
+   "key": "icon",
+   "file": "svgs.generated.ts#icon",
+   "figmaName": "Icon",
+   "figmaNodes": [
+    "I933:3585;894:544",
+    "I962:6342;894:544",
+    "I962:6417;894:544",
+    "I962:6629;894:544",
+    "I962:6704;894:544",
+    "I962:6916;894:544",
+    "I962:6991;894:544",
+    "I965:4666;894:544",
+    "I966:4781;894:544",
+    "I968:4916;894:544",
+    "I960:5393;894:544"
+   ],
+   "screens": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B12"
+   ]
+  },
+  {
+   "key": "icon1",
+   "file": "svgs.generated.ts#icon1",
+   "figmaName": "Icon",
+   "figmaNodes": [
+    "I962:6992;947:4290;954:4218"
+   ],
+   "screens": [
+    "B07"
+   ]
+  },
+  {
+   "key": "icon2",
+   "file": "svgs.generated.ts#icon2",
+   "figmaName": "Icon",
+   "figmaNodes": [
+    "I974:5105;974:5070;974:5034"
+   ],
+   "screens": [
+    "B11"
+   ]
+  },
+  {
+   "key": "iconsAI",
+   "file": "svgs.generated.ts#iconsAI",
+   "figmaName": "Icons/AI",
+   "figmaNodes": [
+    "I881:4850;403:4460;277:242",
+    "I881:4869;403:4460;277:242",
+    "I881:4904;277:283"
+   ],
+   "screens": [
+    "D10",
+    "D11",
+    "E01"
+   ]
+  },
+  {
+   "key": "iconsArrowLeft",
+   "file": "svgs.generated.ts#iconsArrowLeft",
+   "figmaName": "Icons/arrow-left",
+   "figmaNodes": [
+    "I881:5031;211:1783",
+    "I881:4707;211:1783",
+    "I881:4724;211:1783",
+    "I881:4769;211:1783",
+    "I881:4851;211:1783",
+    "I881:4870;211:1783",
+    "I881:4745;211:1783",
+    "I881:4574;211:1783",
+    "I881:5047;211:1783",
+    "I881:5070;211:1783",
+    "I881:5112;211:1783",
+    "I881:5097;211:1783",
+    "I881:3499;211:1783"
+   ],
+   "screens": [
+    "C07",
+    "D04",
+    "D05",
+    "D06",
+    "D10",
+    "D11",
+    "D12",
+    "F02",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "G01"
+   ]
+  },
+  {
+   "key": "iconsArrowRight",
+   "file": "svgs.generated.ts#iconsArrowRight",
+   "figmaName": "Icons/arrow-right",
+   "figmaNodes": [
+    "I881:3373;275:468",
+    "I881:3384;275:468",
+    "I881:3401;275:468",
+    "I881:3417;275:468",
+    "I881:3834;275:468",
+    "I881:3748;275:468",
+    "I882:3385;275:468",
+    "I881:12353;275:468",
+    "I881:3998;275:468",
+    "I881:3435;275:468",
+    "I881:4683;275:468",
+    "I881:4812;275:468",
+    "I881:4836;275:468",
+    "I881:4303;275:468",
+    "I881:4332;275:468",
+    "I881:5103;275:468"
+   ],
+   "screens": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A14",
+    "A15",
+    "D02",
+    "D08",
+    "D09",
+    "F01",
+    "F03",
+    "F08"
+   ]
+  },
+  {
+   "key": "iconsCalendar",
+   "file": "svgs.generated.ts#iconsCalendar",
+   "figmaName": "Icons/calendar",
+   "figmaNodes": [
+    "I881:3745;291:394",
+    "I881:4820;291:394",
+    "I881:5139;291:394"
+   ],
+   "screens": [
+    "A10",
+    "D09",
+    "F07"
+   ]
+  },
+  {
+   "key": "iconsCalendarCheck",
+   "file": "svgs.generated.ts#iconsCalendarCheck",
+   "figmaName": "Icons/calendar-check",
+   "figmaNodes": [
+    "I891:14456;488:3270;488:3214",
+    "I962:6353;488:3270;488:3214",
+    "I962:6428;488:3270;488:3214",
+    "I962:6640;488:3270;488:3214",
+    "I962:6715;488:3270;488:3214",
+    "I962:6927;488:3270;488:3214",
+    "I962:7002;488:3270;488:3214",
+    "I965:4677;488:3270;488:3214",
+    "I966:4791;488:3270;488:3214",
+    "I968:4926;488:3270;488:3214",
+    "I968:5043;488:3270;488:3214",
+    "I960:5404;488:3270;488:3214",
+    "I881:4287;488:3270;488:3236",
+    "I881:4648;488:3270;488:3214",
+    "I881:4241;488:3270;488:3214",
+    "I881:4684;488:3270;488:3214",
+    "I881:4700;488:3270;488:3214",
+    "I881:4738;488:3270;488:3214",
+    "I881:4784;488:3270;488:3214",
+    "I881:4813;488:3270;488:3214",
+    "I881:4837;488:3270;488:3214",
+    "I881:4855;488:3270;488:3214",
+    "I881:4874;488:3270;488:3214",
+    "I488:3270;488:3214",
+    "I881:4913;488:3270;488:3214",
+    "I881:4319;488:3270;488:3214",
+    "I881:4588;488:3270;488:3214",
+    "I881:5063;488:3270;488:3214",
+    "I881:5090;488:3270;488:3214",
+    "I881:5105;488:3270;488:3214",
+    "I881:3506;488:3270;488:3214"
+   ],
+   "screens": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "C02",
+    "C03",
+    "D01",
+    "D02",
+    "D03",
+    "D05",
+    "D06",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "E01",
+    "F01",
+    "F04",
+    "F05",
+    "F06",
+    "F08",
+    "G01"
+   ]
+  },
+  {
+   "key": "iconsCalendarCheck2",
+   "file": "svgs.generated.ts#iconsCalendarCheck2",
+   "figmaName": "Icons/calendar-check",
+   "figmaNodes": [
+    "I881:4942;275:665",
+    "I881:4973;275:665"
+   ],
+   "screens": [
+    "C04",
+    "C06"
+   ]
+  },
+  {
+   "key": "iconsCalendarCheck3",
+   "file": "svgs.generated.ts#iconsCalendarCheck3",
+   "figmaName": "Icons/calendar-check",
+   "figmaNodes": [
+    "I881:5004;275:468"
+   ],
+   "screens": [
+    "C05"
+   ]
+  },
+  {
+   "key": "iconsCalendarPlus",
+   "file": "svgs.generated.ts#iconsCalendarPlus",
+   "figmaName": "Icons/calendar-plus",
+   "figmaNodes": [
+    "I881:4269;413:4511;275:673",
+    "I881:4313;413:4511;275:673",
+    "I881:4343;413:4511;275:673"
+   ],
+   "screens": [
+    "C02",
+    "F01",
+    "F03"
+   ]
+  },
+  {
+   "key": "iconsCamera",
+   "file": "svgs.generated.ts#iconsCamera",
+   "figmaName": "Icons/Camera",
+   "figmaNodes": [
+    "I881:4780;352:3976"
+   ],
+   "screens": [
+    "D06"
+   ]
+  },
+  {
+   "key": "iconsCancel",
+   "file": "svgs.generated.ts#iconsCancel",
+   "figmaName": "Icons/cancel",
+   "figmaNodes": [
+    "265:3284"
+   ],
+   "screens": [
+    "A09",
+    "A13",
+    "A14",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "D09",
+    "E01",
+    "F03",
+    "F07"
+   ]
+  },
+  {
+   "key": "iconsCancel2",
+   "file": "svgs.generated.ts#iconsCancel2",
+   "figmaName": "Icons/cancel",
+   "figmaNodes": [
+    "881:4847"
+   ],
+   "screens": [
+    "D10"
+   ]
+  },
+  {
+   "key": "iconsCheck",
+   "file": "svgs.generated.ts#iconsCheck",
+   "figmaName": "Icons/check",
+   "figmaNodes": [
+    "I881:4276;413:4283;277:283"
+   ],
+   "screens": [
+    "C02"
+   ]
+  },
+  {
+   "key": "iconsCheck2",
+   "file": "svgs.generated.ts#iconsCheck2",
+   "figmaName": "Icons/check",
+   "figmaNodes": [
+    "I881:4609;417:5152;406:4650",
+    "I881:4361;417:5152;406:4650"
+   ],
+   "screens": [
+    "C03",
+    "F03"
+   ]
+  },
+  {
+   "key": "iconsCheckCircle",
+   "file": "svgs.generated.ts#iconsCheckCircle",
+   "figmaName": "Icons/check-circle",
+   "figmaNodes": [
+    "881:4952",
+    "881:5015",
+    "881:4983"
+   ],
+   "screens": [
+    "C04",
+    "C05",
+    "C06"
+   ]
+  },
+  {
+   "key": "iconsCheckCircle2",
+   "file": "svgs.generated.ts#iconsCheckCircle2",
+   "figmaName": "Icons/check-circle",
+   "figmaNodes": [
+    "I881:4956;455:8920;406:4668",
+    "I881:5019;455:8920;406:4668",
+    "I881:4986;455:8920;406:4668"
+   ],
+   "screens": [
+    "C04",
+    "C05",
+    "C06"
+   ]
+  },
+  {
+   "key": "iconsCheckCircle3",
+   "file": "svgs.generated.ts#iconsCheckCircle3",
+   "figmaName": "Icons/check-circle",
+   "figmaNodes": [
+    "265:3274"
+   ],
+   "screens": [
+    "D10"
+   ]
+  },
+  {
+   "key": "iconsCheckCircleFill",
+   "file": "svgs.generated.ts#iconsCheckCircleFill",
+   "figmaName": "Icons/check-circle-fill",
+   "figmaNodes": [
+    "470:7780"
+   ],
+   "screens": [
+    "B10"
+   ]
+  },
+  {
+   "key": "iconsCheckCircleFill2",
+   "file": "svgs.generated.ts#iconsCheckCircleFill2",
+   "figmaName": "Icons/check-circle-fill",
+   "figmaNodes": [
+    "881:4949",
+    "881:5012",
+    "881:4980"
+   ],
+   "screens": [
+    "C04",
+    "C05",
+    "C06"
+   ]
+  },
+  {
+   "key": "iconsChevronDown",
+   "file": "svgs.generated.ts#iconsChevronDown",
+   "figmaName": "Icons/chevron-down",
+   "figmaNodes": [
+    "I881:4821;291:394"
+   ],
+   "screens": [
+    "D09"
+   ]
+  },
+  {
+   "key": "iconsChevronLeft",
+   "file": "svgs.generated.ts#iconsChevronLeft",
+   "figmaName": "Icons/chevron-left",
+   "figmaNodes": [
+    "265:3278"
+   ],
+   "screens": [
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A10",
+    "A11",
+    "A12",
+    "D08"
+   ]
+  },
+  {
+   "key": "iconsChevronRight",
+   "file": "svgs.generated.ts#iconsChevronRight",
+   "figmaName": "Icons/chevron-right",
+   "figmaNodes": [
+    "265:3280"
+   ],
+   "screens": [
+    "B09"
+   ]
+  },
+  {
+   "key": "iconsChevronRight2",
+   "file": "svgs.generated.ts#iconsChevronRight2",
+   "figmaName": "Icons/chevron-right",
+   "figmaNodes": [
+    "I881:5086;470:7246",
+    "I881:5127;470:7246"
+   ],
+   "screens": [
+    "F06",
+    "F07"
+   ]
+  },
+  {
+   "key": "iconsChevronRight3",
+   "file": "svgs.generated.ts#iconsChevronRight3",
+   "figmaName": "Icons/chevron-right",
+   "figmaNodes": [
+    "881:3450"
+   ],
+   "screens": [
+    "G01"
+   ]
+  },
+  {
+   "key": "iconsClock",
+   "file": "svgs.generated.ts#iconsClock",
+   "figmaName": "Icons/clock",
+   "figmaNodes": [
+    "265:3326"
+   ],
+   "screens": [
+    "B10"
+   ]
+  },
+  {
+   "key": "iconsClock2",
+   "file": "svgs.generated.ts#iconsClock2",
+   "figmaName": "Icons/clock",
+   "figmaNodes": [
+    "I881:5002;455:8941;406:4660"
+   ],
+   "screens": [
+    "C05"
+   ]
+  },
+  {
+   "key": "iconsClock3",
+   "file": "svgs.generated.ts#iconsClock3",
+   "figmaName": "Icons/clock",
+   "figmaNodes": [
+    "I881:4970;455:8941;406:4690",
+    "I881:5056;467:6596;406:4690"
+   ],
+   "screens": [
+    "C06",
+    "F05"
+   ]
+  },
+  {
+   "key": "iconsClock4",
+   "file": "svgs.generated.ts#iconsClock4",
+   "figmaName": "Icons/clock",
+   "figmaNodes": [
+    "I881:5053;467:6596;406:4660"
+   ],
+   "screens": [
+    "F05"
+   ]
+  },
+  {
+   "key": "iconsClock5",
+   "file": "svgs.generated.ts#iconsClock5",
+   "figmaName": "Icons/clock",
+   "figmaNodes": [
+    "I881:5055;467:6596;406:4670"
+   ],
+   "screens": [
+    "F05"
+   ]
+  },
+  {
+   "key": "iconsCross",
+   "file": "svgs.generated.ts#iconsCross",
+   "figmaName": "Icons/Cross",
+   "figmaNodes": [
+    "I881:4302;291:334",
+    "I881:4336;291:334"
+   ],
+   "screens": [
+    "F01",
+    "F03"
+   ]
+  },
+  {
+   "key": "iconsDanger",
+   "file": "svgs.generated.ts#iconsDanger",
+   "figmaName": "Icons/danger",
+   "figmaNodes": [
+    "265:3314"
+   ],
+   "screens": [
+    "B11"
+   ]
+  },
+  {
+   "key": "iconsEdit",
+   "file": "svgs.generated.ts#iconsEdit",
+   "figmaName": "Icons/edit",
+   "figmaNodes": [
+    "265:3335"
+   ],
+   "screens": [
+    "B02",
+    "B03",
+    "B05"
+   ]
+  },
+  {
+   "key": "iconsFolder",
+   "file": "svgs.generated.ts#iconsFolder",
+   "figmaName": "Icons/Folder",
+   "figmaNodes": [
+    "I891:14456;488:3265;488:3214",
+    "I962:6353;488:3265;488:3214",
+    "I962:6428;488:3265;488:3214",
+    "I962:6640;488:3265;488:3214",
+    "I962:6715;488:3265;488:3214",
+    "I962:6927;488:3265;488:3214",
+    "I962:7002;488:3265;488:3214",
+    "I965:4677;488:3265;488:3214",
+    "I966:4791;488:3265;488:3214",
+    "I968:4926;488:3265;488:3214",
+    "I968:5043;488:3265;488:3214",
+    "I960:5404;488:3265;488:3214",
+    "I881:4287;488:3265;488:3214",
+    "I881:4648;488:3265;488:3214",
+    "I881:4241;488:3265;488:3236",
+    "I881:4684;488:3265;488:3236",
+    "I881:4700;488:3265;488:3236",
+    "I881:4738;488:3265;488:3236",
+    "I881:4784;488:3265;488:3236",
+    "I881:4813;488:3265;488:3236",
+    "I881:4837;488:3265;488:3236",
+    "I881:4855;488:3265;488:3236",
+    "I881:4874;488:3265;488:3236",
+    "I488:3265;488:3214",
+    "I881:4913;488:3265;488:3214",
+    "I881:4319;488:3265;488:3214",
+    "I881:4588;488:3265;488:3214",
+    "I881:5063;488:3265;488:3214",
+    "I881:5090;488:3265;488:3214",
+    "I881:5105;488:3265;488:3214",
+    "I881:3506;488:3265;488:3214"
+   ],
+   "screens": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "C02",
+    "C03",
+    "D01",
+    "D02",
+    "D03",
+    "D05",
+    "D06",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "E01",
+    "F01",
+    "F04",
+    "F05",
+    "F06",
+    "F08",
+    "G01"
+   ]
+  },
+  {
+   "key": "iconsFolder2",
+   "file": "svgs.generated.ts#iconsFolder2",
+   "figmaName": "Icons/Folder",
+   "figmaNodes": [
+    "I881:4779;352:3976"
+   ],
+   "screens": [
+    "D06"
+   ]
+  },
+  {
+   "key": "iconsHappy",
+   "file": "svgs.generated.ts#iconsHappy",
+   "figmaName": "Icons/Happy",
+   "figmaNodes": [
+    "I881:4892;406:4668"
+   ],
+   "screens": [
+    "E01"
+   ]
+  },
+  {
+   "key": "iconsHome",
+   "file": "svgs.generated.ts#iconsHome",
+   "figmaName": "Icons/home",
+   "figmaNodes": [
+    "I881:3535;111:887",
+    "I881:3784;111:887",
+    "I881:4653;111:887",
+    "I881:4790;111:887",
+    "I881:4331;111:887",
+    "I881:5130;111:887"
+   ],
+   "screens": [
+    "A06",
+    "A08",
+    "D02",
+    "D07",
+    "F03",
+    "F07"
+   ]
+  },
+  {
+   "key": "iconsHome2",
+   "file": "svgs.generated.ts#iconsHome2",
+   "figmaName": "Icons/home",
+   "figmaNodes": [
+    "I891:14456;488:3260;488:3214",
+    "I962:6353;488:3260;488:3214",
+    "I962:6428;488:3260;488:3214",
+    "I962:6640;488:3260;488:3214",
+    "I962:6715;488:3260;488:3214",
+    "I962:6927;488:3260;488:3214",
+    "I962:7002;488:3260;488:3214",
+    "I965:4677;488:3260;488:3214",
+    "I966:4791;488:3260;488:3214",
+    "I968:4926;488:3260;488:3214",
+    "I968:5043;488:3260;488:3214",
+    "I960:5404;488:3260;488:3214",
+    "I881:4287;488:3260;488:3214",
+    "I881:4648;488:3260;488:3214",
+    "I881:4241;488:3260;488:3214",
+    "I881:4684;488:3260;488:3214",
+    "I881:4700;488:3260;488:3214",
+    "I881:4738;488:3260;488:3214",
+    "I881:4784;488:3260;488:3214",
+    "I881:4813;488:3260;488:3214",
+    "I881:4837;488:3260;488:3214",
+    "I881:4855;488:3260;488:3214",
+    "I881:4874;488:3260;488:3214",
+    "I488:3260;488:3214",
+    "I881:4913;488:3260;488:3214",
+    "I881:4319;488:3260;488:3214",
+    "I881:4588;488:3260;488:3214",
+    "I881:5063;488:3260;488:3214",
+    "I881:5090;488:3260;488:3214",
+    "I881:5105;488:3260;488:3214",
+    "I881:3506;488:3260;488:3214"
+   ],
+   "screens": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "C02",
+    "C03",
+    "D01",
+    "D02",
+    "D03",
+    "D05",
+    "D06",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "E01",
+    "F01",
+    "F04",
+    "F05",
+    "F06",
+    "F08",
+    "G01"
+   ]
+  },
+  {
+   "key": "iconsInfo",
+   "file": "svgs.generated.ts#iconsInfo",
+   "figmaName": "Icons/info",
+   "figmaNodes": [
+    "I455:8941;406:4710"
+   ],
+   "screens": [
+    "C04"
+   ]
+  },
+  {
+   "key": "iconsLocation",
+   "file": "svgs.generated.ts#iconsLocation",
+   "figmaName": "Icons/location",
+   "figmaNodes": [
+    "I881:4301;291:334",
+    "I881:4335;291:334"
+   ],
+   "screens": [
+    "F01",
+    "F03"
+   ]
+  },
+  {
+   "key": "iconsLocation2",
+   "file": "svgs.generated.ts#iconsLocation2",
+   "figmaName": "Icons/location",
+   "figmaNodes": [
+    "881:5075",
+    "881:5117"
+   ],
+   "screens": [
+    "F06",
+    "F07"
+   ]
+  },
+  {
+   "key": "iconsLocationPlus",
+   "file": "svgs.generated.ts#iconsLocationPlus",
+   "figmaName": "Icons/location-plus",
+   "figmaNodes": [
+    "I881:4407;275:792"
+   ],
+   "screens": [
+    "F02"
+   ]
+  },
+  {
+   "key": "iconsMap",
+   "file": "svgs.generated.ts#iconsMap",
+   "figmaName": "Icons/Map",
+   "figmaNodes": [
+    "881:5059"
+   ],
+   "screens": [
+    "F05"
+   ]
+  },
+  {
+   "key": "iconsMenu",
+   "file": "svgs.generated.ts#iconsMenu",
+   "figmaName": "Icons/Menu",
+   "figmaNodes": [
+    "542:10187"
+   ],
+   "screens": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B12"
+   ]
+  },
+  {
+   "key": "iconsMenu2",
+   "file": "svgs.generated.ts#iconsMenu2",
+   "figmaName": "Icons/Menu",
+   "figmaNodes": [
+    "I881:4707;540:10102",
+    "I881:4724;540:10102",
+    "I881:4769;540:10102",
+    "I881:4851;540:10102",
+    "I881:4870;540:10102",
+    "I881:4745;540:10102",
+    "I881:4574;540:10102",
+    "I881:5047;540:10102",
+    "I881:5070;540:10102",
+    "I881:5112;540:10102",
+    "I881:5097;540:10102"
+   ],
+   "screens": [
+    "D04",
+    "D05",
+    "D06",
+    "D10",
+    "D11",
+    "D12",
+    "F02",
+    "F05",
+    "F06",
+    "F07",
+    "F08"
+   ]
+  },
+  {
+   "key": "iconsNeutral",
+   "file": "svgs.generated.ts#iconsNeutral",
+   "figmaName": "Icons/Neutral",
+   "figmaNodes": [
+    "I881:4901;406:4698"
+   ],
+   "screens": [
+    "E01"
+   ]
+  },
+  {
+   "key": "iconsNotifications",
+   "file": "svgs.generated.ts#iconsNotifications",
+   "figmaName": "Icons/notifications",
+   "figmaNodes": [
+    "265:3363"
+   ],
+   "screens": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B12"
+   ]
+  },
+  {
+   "key": "iconsPlus",
+   "file": "svgs.generated.ts#iconsPlus",
+   "figmaName": "Icons/plus",
+   "figmaNodes": [
+    "I881:3955;275:468",
+    "I881:4238;275:468",
+    "I881:4654;275:468",
+    "I881:4715;275:468",
+    "277:242"
+   ],
+   "screens": [
+    "A13",
+    "D01",
+    "D02",
+    "D04",
+    "D05",
+    "D06",
+    "D12"
+   ]
+  },
+  {
+   "key": "iconsPlus2",
+   "file": "svgs.generated.ts#iconsPlus2",
+   "figmaName": "Icons/plus",
+   "figmaNodes": [
+    "I962:6343;947:4067;956:4513;298:4186",
+    "I962:6418;947:4298;956:4513;298:4186",
+    "I962:6630;947:4067;956:4513;298:4186",
+    "I962:6705;947:4298;956:4513;298:4186",
+    "I962:6917;947:4067;956:4513;298:4186",
+    "I881:4278;275:665",
+    "I881:4936;275:665",
+    "I881:5021;275:665",
+    "I881:4989;275:665",
+    "I881:5032;275:787",
+    "I881:4688;455:8621;277:310"
+   ],
+   "screens": [
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "C02",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "D03"
+   ]
+  },
+  {
+   "key": "iconsReceipt",
+   "file": "svgs.generated.ts#iconsReceipt",
+   "figmaName": "Icons/receipt",
+   "figmaNodes": [
+    "I881:3535;111:890",
+    "I881:3784;111:890",
+    "I881:4653;111:890",
+    "I881:4790;111:890",
+    "I881:4331;111:890",
+    "I881:5130;111:890"
+   ],
+   "screens": [
+    "A06",
+    "A08",
+    "D02",
+    "D07",
+    "F03",
+    "F07"
+   ]
+  },
+  {
+   "key": "iconsSearch",
+   "file": "svgs.generated.ts#iconsSearch",
+   "figmaName": "Icons/search",
+   "figmaNodes": [
+    "I881:3535;111:893",
+    "I881:3784;111:893",
+    "I881:4653;111:893",
+    "I881:4790;111:893",
+    "I881:4331;111:893",
+    "I881:5130;111:893"
+   ],
+   "screens": [
+    "A06",
+    "A08",
+    "D02",
+    "D07",
+    "F03",
+    "F07"
+   ]
+  },
+  {
+   "key": "iconsSearch2",
+   "file": "svgs.generated.ts#iconsSearch2",
+   "figmaName": "Icons/search",
+   "figmaNodes": [
+    "I881:4406;291:334"
+   ],
+   "screens": [
+    "F02"
+   ]
+  },
+  {
+   "key": "iconsSetting",
+   "file": "svgs.generated.ts#iconsSetting",
+   "figmaName": "Icons/setting",
+   "figmaNodes": [
+    "265:3312"
+   ],
+   "screens": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B12"
+   ]
+  },
+  {
+   "key": "iconsUpload",
+   "file": "svgs.generated.ts#iconsUpload",
+   "figmaName": "Icons/Upload",
+   "figmaNodes": [
+    "I881:4854;275:468",
+    "I881:4873;275:468"
+   ],
+   "screens": [
+    "D10",
+    "D11"
+   ]
+  },
+  {
+   "key": "iconsUser",
+   "file": "svgs.generated.ts#iconsUser",
+   "figmaName": "Icons/user",
+   "figmaNodes": [
+    "I881:3535;111:899",
+    "I881:3784;111:899",
+    "I881:4653;111:899",
+    "I881:4790;111:899",
+    "I881:4331;111:899",
+    "I881:5130;111:899"
+   ],
+   "screens": [
+    "A06",
+    "A08",
+    "D02",
+    "D07",
+    "F03",
+    "F07"
+   ]
+  },
+  {
+   "key": "iconsUser2",
+   "file": "svgs.generated.ts#iconsUser2",
+   "figmaName": "Icons/user",
+   "figmaNodes": [
+    "I891:14456;488:3275;488:3214",
+    "I962:6353;488:3275;488:3214",
+    "I962:6428;488:3275;488:3214",
+    "I962:6640;488:3275;488:3214",
+    "I962:6715;488:3275;488:3214",
+    "I962:6927;488:3275;488:3214",
+    "I962:7002;488:3275;488:3214",
+    "I965:4677;488:3275;488:3214",
+    "I966:4791;488:3275;488:3214",
+    "I968:4926;488:3275;488:3214",
+    "I968:5043;488:3275;488:3214",
+    "I960:5404;488:3275;488:3214",
+    "I881:4287;488:3275;488:3214",
+    "I881:4648;488:3275;488:3214",
+    "I881:4241;488:3275;488:3214",
+    "I881:4684;488:3275;488:3214",
+    "I881:4700;488:3275;488:3214",
+    "I881:4738;488:3275;488:3214",
+    "I881:4784;488:3275;488:3214",
+    "I881:4813;488:3275;488:3214",
+    "I881:4837;488:3275;488:3214",
+    "I881:4855;488:3275;488:3214",
+    "I881:4874;488:3275;488:3214",
+    "I488:3275;488:3214",
+    "I881:4913;488:3275;488:3214",
+    "I881:4319;488:3275;488:3214",
+    "I881:4588;488:3275;488:3214",
+    "I881:5063;488:3275;488:3214",
+    "I881:5090;488:3275;488:3214",
+    "I881:5105;488:3275;488:3214",
+    "I881:3506;488:3275;488:3236"
+   ],
+   "screens": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "C02",
+    "C03",
+    "D01",
+    "D02",
+    "D03",
+    "D05",
+    "D06",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "E01",
+    "F01",
+    "F04",
+    "F05",
+    "F06",
+    "F08",
+    "G01"
+   ]
+  },
+  {
+   "key": "iconsWarning",
+   "file": "svgs.generated.ts#iconsWarning",
+   "figmaName": "Icons/warning",
+   "figmaNodes": [
+    "480:3265"
+   ],
+   "screens": [
+    "B12"
+   ]
+  },
+  {
+   "key": "iconsWarning2",
+   "file": "svgs.generated.ts#iconsWarning2",
+   "figmaName": "Icons/warning",
+   "figmaNodes": [
+    "I881:4955;455:8920;406:4698",
+    "I881:5018;455:8920;406:4698"
+   ],
+   "screens": [
+    "C04",
+    "C05"
+   ]
+  },
+  {
+   "key": "illustrations",
+   "file": "images/illustrations.png",
+   "figmaName": "Illustrations",
+   "figmaNodes": [
+    "I881:3984;527:15065"
+   ],
+   "screens": [
+    "A14"
+   ]
+  },
+  {
+   "key": "illustrations2",
+   "file": "images/illustrations2.png",
+   "figmaName": "Illustrations",
+   "figmaNodes": [
+    "I881:3985;527:15065"
+   ],
+   "screens": [
+    "A14"
+   ]
+  },
+  {
+   "key": "illustrations3",
+   "file": "images/illustrations3.jpg",
+   "figmaName": "Illustrations",
+   "figmaNodes": [
+    "I881:3986;527:15065"
+   ],
+   "screens": [
+    "A14"
+   ]
+  },
+  {
+   "key": "illustrations4",
+   "file": "images/illustrations4.png",
+   "figmaName": "Illustrations",
+   "figmaNodes": [
+    "I881:3987;527:15065"
+   ],
+   "screens": [
+    "A14"
+   ]
+  },
+  {
+   "key": "illustrations5",
+   "file": "images/illustrations5.jpg",
+   "figmaName": "Illustrations",
+   "figmaNodes": [
+    "I881:3988;527:15065"
+   ],
+   "screens": [
+    "A14"
+   ]
+  },
+  {
+   "key": "image",
+   "file": "images/image.jpg",
+   "figmaName": "Image",
+   "figmaNodes": [
+    "I881:5053;465:8692"
+   ],
+   "screens": [
+    "F05"
+   ]
+  },
+  {
+   "key": "image101",
+   "file": "images/image101.jpg",
+   "figmaName": "image 101",
+   "figmaNodes": [
+    "881:4796",
+    "881:4825"
+   ],
+   "screens": [
+    "D07",
+    "D09"
+   ]
+  },
+  {
+   "key": "image2",
+   "file": "images/image2.jpg",
+   "figmaName": "Image",
+   "figmaNodes": [
+    "I881:5054;465:8692"
+   ],
+   "screens": [
+    "F05"
+   ]
+  },
+  {
+   "key": "image3",
+   "file": "images/image3.jpg",
+   "figmaName": "Image",
+   "figmaNodes": [
+    "I881:5055;465:8692"
+   ],
+   "screens": [
+    "F05"
+   ]
+  },
+  {
+   "key": "image35",
+   "file": "images/image35.png",
+   "figmaName": "image 35",
+   "figmaNodes": [
+    "881:3961"
+   ],
+   "screens": [
+    "A13"
+   ]
+  },
+  {
+   "key": "image36",
+   "file": "images/image36.png",
+   "figmaName": "image 36",
+   "figmaNodes": [
+    "881:3962"
+   ],
+   "screens": [
+    "A13"
+   ]
+  },
+  {
+   "key": "image37",
+   "file": "images/image37.png",
+   "figmaName": "image 37",
+   "figmaNodes": [
+    "881:3963"
+   ],
+   "screens": [
+    "A13"
+   ]
+  },
+  {
+   "key": "image4",
+   "file": "images/image4.jpg",
+   "figmaName": "Image",
+   "figmaNodes": [
+    "I881:5056;465:8692",
+    "881:5071",
+    "881:5113"
+   ],
+   "screens": [
+    "F05",
+    "F06",
+    "F07"
+   ]
+  },
+  {
+   "key": "line1",
+   "file": "svgs.generated.ts#line1",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A05",
+    "A06"
+   ]
+  },
+  {
+   "key": "line2",
+   "file": "svgs.generated.ts#line2",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A05",
+    "A06"
+   ]
+  },
+  {
+   "key": "loadingCircle",
+   "file": "svgs.generated.ts#loadingCircle",
+   "figmaName": "Loading circle",
+   "figmaNodes": [
+    "357:4833"
+   ],
+   "screens": [
+    "D08"
+   ]
+  },
+  {
+   "key": "map",
+   "file": "svgs.generated.ts#map",
+   "figmaName": "Map",
+   "figmaNodes": [
+    "I881:4586;1:58"
+   ],
+   "screens": [
+    "F04"
+   ]
+  },
+  {
+   "key": "maps",
+   "file": "images/maps.jpg",
+   "figmaName": "Maps",
+   "figmaNodes": [
+    "I881:4586;1:56"
+   ],
+   "screens": [
+    "F04"
+   ]
+  },
+  {
+   "key": "menuFilled1",
+   "file": "svgs.generated.ts#menuFilled1",
+   "figmaName": "menu-filled 1",
+   "figmaNodes": [
+    "881:4284",
+    "881:4597",
+    "881:4229",
+    "881:4679",
+    "881:4694",
+    "881:4296",
+    "881:4328",
+    "881:4584"
+   ],
+   "screens": [
+    "C02",
+    "C03",
+    "D01",
+    "D02",
+    "D03",
+    "F01",
+    "F03",
+    "F04"
+   ]
+  },
+  {
+   "key": "mic",
+   "file": "svgs.generated.ts#mic",
+   "figmaName": "Mic",
+   "figmaNodes": [
+    "888:519"
+   ],
+   "screens": [
+    "B01"
+   ]
+  },
+  {
+   "key": "next",
+   "file": "svgs.generated.ts#next",
+   "figmaName": "Next",
+   "figmaNodes": [
+    "I962:6343;947:4023;947:4013",
+    "I962:6418;947:4191;947:4013",
+    "I962:6630;947:4023;947:4013",
+    "I962:6705;947:4191;947:4013",
+    "I962:6917;947:4023;947:4013",
+    "I962:6992;947:4191;947:4013",
+    "I965:4775;965:4613;947:4013"
+   ],
+   "screens": [
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08"
+   ]
+  },
+  {
+   "key": "preciseLocation",
+   "file": "svgs.generated.ts#preciseLocation",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "F04"
+   ]
+  },
+  {
+   "key": "prev",
+   "file": "svgs.generated.ts#prev",
+   "figmaName": "Prev",
+   "figmaNodes": [
+    "I962:6343;947:4023;947:4010"
+   ],
+   "screens": [
+    "B02"
+   ]
+  },
+  {
+   "key": "prev2",
+   "file": "svgs.generated.ts#prev2",
+   "figmaName": "Prev",
+   "figmaNodes": [
+    "I962:6418;947:4191;947:4010"
+   ],
+   "screens": [
+    "B03"
+   ]
+  },
+  {
+   "key": "prev3",
+   "file": "svgs.generated.ts#prev3",
+   "figmaName": "Prev",
+   "figmaNodes": [
+    "I962:6630;947:4023;947:4010"
+   ],
+   "screens": [
+    "B04"
+   ]
+  },
+  {
+   "key": "prev4",
+   "file": "svgs.generated.ts#prev4",
+   "figmaName": "Prev",
+   "figmaNodes": [
+    "I962:6705;947:4191;947:4010"
+   ],
+   "screens": [
+    "B05"
+   ]
+  },
+  {
+   "key": "prev5",
+   "file": "svgs.generated.ts#prev5",
+   "figmaName": "Prev",
+   "figmaNodes": [
+    "I962:6917;947:4023;947:4010"
+   ],
+   "screens": [
+    "B06"
+   ]
+  },
+  {
+   "key": "prev6",
+   "file": "svgs.generated.ts#prev6",
+   "figmaName": "Prev",
+   "figmaNodes": [
+    "I962:6992;947:4191;947:4010"
+   ],
+   "screens": [
+    "B07"
+   ]
+  },
+  {
+   "key": "prev7",
+   "file": "svgs.generated.ts#prev7",
+   "figmaName": "Prev",
+   "figmaNodes": [
+    "I965:4775;965:4613;947:4010"
+   ],
+   "screens": [
+    "B08"
+   ]
+  },
+  {
+   "key": "prev8",
+   "file": "svgs.generated.ts#prev8",
+   "figmaName": "Prev",
+   "figmaNodes": [
+    "I966:4881;966:4742;947:4010"
+   ],
+   "screens": [
+    "B09"
+   ]
+  },
+  {
+   "key": "property1Frame",
+   "file": "svgs.generated.ts#property1Frame",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "D08"
+   ]
+  },
+  {
+   "key": "property1Frame13",
+   "file": "svgs.generated.ts#property1Frame13",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "D08"
+   ]
+  },
+  {
+   "key": "property1Png",
+   "file": "svgs.generated.ts#property1Png",
+   "figmaName": null,
+   "figmaNodes": [
+    "357:4245"
+   ],
+   "screens": [
+    "D08",
+    "D10",
+    "D11",
+    "E01"
+   ]
+  },
+  {
+   "key": "rectangle",
+   "file": "svgs.generated.ts#rectangle",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A06"
+   ]
+  },
+  {
+   "key": "rectangle1",
+   "file": "svgs.generated.ts#rectangle1",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A06"
+   ]
+  },
+  {
+   "key": "rectangle12",
+   "file": "svgs.generated.ts#rectangle12",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "F02"
+   ]
+  },
+  {
+   "key": "rectangle2",
+   "file": "svgs.generated.ts#rectangle2",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A06"
+   ]
+  },
+  {
+   "key": "rectangle22",
+   "file": "svgs.generated.ts#rectangle22",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "F02"
+   ]
+  },
+  {
+   "key": "rectangle3",
+   "file": "svgs.generated.ts#rectangle3",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A06"
+   ]
+  },
+  {
+   "key": "rectangle32",
+   "file": "svgs.generated.ts#rectangle32",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "F02"
+   ]
+  },
+  {
+   "key": "rectangle4",
+   "file": "svgs.generated.ts#rectangle4",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A06"
+   ]
+  },
+  {
+   "key": "rectangle42",
+   "file": "svgs.generated.ts#rectangle42",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "F02"
+   ]
+  },
+  {
+   "key": "rectangle5",
+   "file": "svgs.generated.ts#rectangle5",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A06"
+   ]
+  },
+  {
+   "key": "rectangle52",
+   "file": "svgs.generated.ts#rectangle52",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "F02"
+   ]
+  },
+  {
+   "key": "rectangle6",
+   "file": "svgs.generated.ts#rectangle6",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "F02"
+   ]
+  },
+  {
+   "key": "rectangle817",
+   "file": "images/rectangle817.png",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A13"
+   ]
+  },
+  {
+   "key": "shield61",
+   "file": "svgs.generated.ts#shield61",
+   "figmaName": "shield (6) 1",
+   "figmaNodes": [
+    "881:3802"
+   ],
+   "screens": [
+    "A09"
+   ]
+  },
+  {
+   "key": "stateDefaultPositionOff",
+   "file": "svgs.generated.ts#stateDefaultPositionOff",
+   "figmaName": null,
+   "figmaNodes": [
+    "468:6835"
+   ],
+   "screens": [
+    "F05",
+    "G01"
+   ]
+  },
+  {
+   "key": "stateDefaultPositionOn",
+   "file": "svgs.generated.ts#stateDefaultPositionOn",
+   "figmaName": "State=Default, Position=On",
+   "figmaNodes": [
+    "468:6843"
+   ],
+   "screens": [
+    "G01"
+   ]
+  },
+  {
+   "key": "stateUnchecked",
+   "file": "svgs.generated.ts#stateUnchecked",
+   "figmaName": null,
+   "figmaNodes": [
+    "208:1220"
+   ],
+   "screens": [
+    "A09",
+    "A12",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "C03",
+    "D02",
+    "F03"
+   ]
+  },
+  {
+   "key": "systemKeyboardsIPhoneLightAlphabetic",
+   "file": "svgs.generated.ts#systemKeyboardsIPhoneLightAlphabetic",
+   "figmaName": "System-/-Keyboards-/-iPhone-/-Light-/-Alphabetic",
+   "figmaNodes": [
+    "881:3554",
+    "881:4409"
+   ],
+   "screens": [
+    "A06",
+    "F02"
+   ]
+  },
+  {
+   "key": "union",
+   "file": "images/union.png",
+   "figmaName": "Union",
+   "figmaNodes": [
+    "881:3386"
+   ],
+   "screens": [
+    "A02"
+   ]
+  },
+  {
+   "key": "union2",
+   "file": "images/union2.png",
+   "figmaName": "Union",
+   "figmaNodes": [
+    "881:3402"
+   ],
+   "screens": [
+    "A03"
+   ]
+  },
+  {
+   "key": "union3",
+   "file": "images/union3.png",
+   "figmaName": "Union",
+   "figmaNodes": [
+    "881:3418"
+   ],
+   "screens": [
+    "A04"
+   ]
+  },
+  {
+   "key": "uterus1",
+   "file": "svgs.generated.ts#uterus1",
+   "figmaName": "uterus 1",
+   "figmaNodes": [
+    "I881:4697;455:8616;327:3300"
+   ],
+   "screens": [
+    "D03"
+   ]
+  },
+  {
+   "key": "vector",
+   "file": "svgs.generated.ts#vector",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "881:3588",
+    "881:4443"
+   ],
+   "screens": [
+    "A06",
+    "F02"
+   ]
+  },
+  {
+   "key": "vector1",
+   "file": "svgs.generated.ts#vector1",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "I881:4671;334:4425;327:4034"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "vector12",
+   "file": "svgs.generated.ts#vector12",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "538:4072"
+   ],
+   "screens": [
+    "F08"
+   ]
+  },
+  {
+   "key": "vector2",
+   "file": "svgs.generated.ts#vector2",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "881:3433"
+   ],
+   "screens": [
+    "A15"
+   ]
+  },
+  {
+   "key": "vector22",
+   "file": "svgs.generated.ts#vector22",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "I881:4671;334:4425;327:4036"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "vector27",
+   "file": "svgs.generated.ts#vector27",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "A13"
+   ]
+  },
+  {
+   "key": "vector28",
+   "file": "svgs.generated.ts#vector28",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "C04",
+    "C05",
+    "C06"
+   ]
+  },
+  {
+   "key": "vector29",
+   "file": "svgs.generated.ts#vector29",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "C04",
+    "C06"
+   ]
+  },
+  {
+   "key": "vector292",
+   "file": "svgs.generated.ts#vector292",
+   "figmaName": null,
+   "figmaNodes": [],
+   "screens": [
+    "C05"
+   ]
+  },
+  {
+   "key": "vector3",
+   "file": "svgs.generated.ts#vector3",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "I881:4671;334:4425;327:4033"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "vector32",
+   "file": "svgs.generated.ts#vector32",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "I881:4671;334:4425;327:4037"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "vector4",
+   "file": "svgs.generated.ts#vector4",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "I881:4671;334:4425;327:4039"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "vector5",
+   "file": "svgs.generated.ts#vector5",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "I881:4671;334:4425;327:4040"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "vector6",
+   "file": "svgs.generated.ts#vector6",
+   "figmaName": "Vector",
+   "figmaNodes": [
+    "538:4067"
+   ],
+   "screens": [
+    "F08"
+   ]
+  },
+  {
+   "key": "xMLID203",
+   "file": "svgs.generated.ts#xMLID203",
+   "figmaName": "XMLID_203_",
+   "figmaNodes": [
+    "I881:4665;334:4425;327:4083"
+   ],
+   "screens": [
+    "D02"
+   ]
+  },
+  {
+   "key": "zANA",
+   "file": "svgs.generated.ts#zANA",
+   "figmaName": "ZA NA",
+   "figmaNodes": [
+    "881:3371"
+   ],
+   "screens": [
+    "A01"
+   ]
+  },
+  {
+   "key": "zANA2",
+   "file": "svgs.generated.ts#zANA2",
+   "figmaName": "ZA NA",
+   "figmaNodes": [
+    "881:3960"
+   ],
+   "screens": [
+    "A13"
+   ]
+  }
+ ]
+}
