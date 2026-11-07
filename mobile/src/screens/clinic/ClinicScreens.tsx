@@ -2,12 +2,13 @@
 // 881:5508 Mark as booked (F07), 881:5560 Appointment saved (F08)
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Modal, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 
 import { BackHeader } from '@/components/composites/BackHeader';
 import { Asset } from '@/components/primitives/Asset';
 import { Button } from '@/components/primitives/Button';
 import { Photo } from '@/components/primitives/Photo';
+import { SheetModal } from '@/components/primitives/SheetModal';
 import { Text } from '@/components/primitives/Text';
 import { TextField } from '@/components/primitives/TextField';
 import { Toggle } from '@/components/primitives/Toggle';
@@ -129,7 +130,7 @@ export function ClinicDetails() {
         </View>
         <Button label="Visit website to book" onPress={() => setSheet(true)} style={{ marginTop: spacing[8] }} />
       </ScrollView>
-      <Modal visible={sheet} transparent animationType="slide" onRequestClose={() => setSheet(false)}>
+      <SheetModal visible={sheet} animationType="slide" onRequestClose={() => setSheet(false)}>
         <View style={styles.scrim}>
           <View style={[styles.bookSheet, { paddingBottom: insets.bottom + 24 }]}>
             <Pressable accessibilityRole="button" accessibilityLabel="Close" onPress={() => setSheet(false)} style={{ alignSelf: 'flex-end' }} hitSlop={12}>
@@ -142,7 +143,7 @@ export function ClinicDetails() {
             <Button label="Mark as booked" onPress={() => { setSheet(false); router.push({ pathname: '/clinic/saved', params: { name: clinic.name } }); }} />
           </View>
         </View>
-      </Modal>
+      </SheetModal>
     </View>
   );
 }

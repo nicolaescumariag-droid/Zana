@@ -1,7 +1,7 @@
 // Figma: 881:5197 Find a Clinic (F01), 881:5291 Screening picker (F03), 881:5311 Location permission (F04)
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Modal, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { ProfileHeader } from '@/components/composites/ProfileHeader';
 import { ScreeningRow, SectionLabel } from '@/components/composites/ScreeningParts';
@@ -9,6 +9,7 @@ import { Asset } from '@/components/primitives/Asset';
 import { Button } from '@/components/primitives/Button';
 import { CheckboxBox } from '@/components/primitives/Checkbox';
 import { Photo } from '@/components/primitives/Photo';
+import { SheetModal } from '@/components/primitives/SheetModal';
 import { Text } from '@/components/primitives/Text';
 import { nearbyLocation } from '@/mocks/clinics';
 import { catalogue, reminders, sectionTitles } from '@/mocks/screenings';
@@ -79,7 +80,7 @@ export function FindClinic() {
 function ScreeningPicker({ visible, onClose, onApply }: { visible: boolean; onClose: () => void; onApply: (v?: string) => void }) {
   const [picked, setPicked] = useState<string | undefined>();
   return (
-    <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
+    <SheetModal visible={visible} animationType="slide" onRequestClose={onClose}>
       <View style={styles.scrim}>
         <View style={styles.pickerSheet}>
           <View style={styles.pickerHead}>
@@ -106,14 +107,14 @@ function ScreeningPicker({ visible, onClose, onApply }: { visible: boolean; onCl
           </View>
         </View>
       </View>
-    </Modal>
+    </SheetModal>
   );
 }
 
 // Mock of the OS permission dialog shown in Figma; no real location is requested.
 function LocationPermission({ visible, onResult }: { visible: boolean; onResult: (allowed: boolean) => void }) {
   return (
-    <Modal visible={visible} transparent animationType="fade" onRequestClose={() => onResult(false)}>
+    <SheetModal visible={visible} animationType="fade" onRequestClose={() => onResult(false)}>
       <View style={[styles.scrim, { justifyContent: 'center', padding: 40 }]}>
         <View style={styles.alert} accessibilityRole="alert">
           <Text variant="bodyLGBold" color="#000">Allow “Welly” to use your location?</Text>
@@ -129,7 +130,7 @@ function LocationPermission({ visible, onResult }: { visible: boolean; onResult:
           ))}
         </View>
       </View>
-    </Modal>
+    </SheetModal>
   );
 }
 
