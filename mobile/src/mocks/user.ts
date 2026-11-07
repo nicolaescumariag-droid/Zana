@@ -5,4 +5,5 @@ export const mockUser = {
   profileName: 'Sophia',
   ageLabel: '30 yo',
   email: 'sophia@gmail.com',
+  firstName: 'Sophie',
 };

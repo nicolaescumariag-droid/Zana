@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ComponentRef, type ReactNode } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, View } from 'react-native';
 
 import { ChatHeader } from '@/components/composites/ChatHeader';
@@ -17,7 +17,7 @@ type PlanScaffoldProps = {
 
 // Shared layout for the guided "Make a plan for screenings" conversation (B02–B10, B12).
 export function PlanScaffold({ children, bottom = false, compact = false, focusCard = false }: PlanScaffoldProps) {
-  const scroll = useRef<ScrollView>(null);
+  const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
   const [cardY, setCardY] = useState(0);
   useEffect(() => {
     if (focusCard && cardY) scroll.current?.scrollTo({ y: cardY - 16, animated: true });
