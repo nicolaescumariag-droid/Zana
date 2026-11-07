@@ -1,6 +1,6 @@
 // Figma: 881:4545 / 881:4594 / 881:4918 Upload (D05, D06, D12), 881:4688 Camera (D07), 881:4740 Uploading (D08),
 // 881:4794 File details (D09), 881:4840 / 881:4884 Uploaded (D10, D11)
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
@@ -26,10 +26,11 @@ const MENU: { label: string; icon: SvgName; to: '/records/uploading' | '/camera'
 
 export function UploadScreen() {
   const router = useRouter();
+  const { from } = useLocalSearchParams<{ from?: string }>();
   const [menu, setMenu] = useState(false);
   return (
     <View style={styles.screen}>
-      <BackHeader title="Upload files" onBack={() => router.back()} showMenu />
+      <BackHeader title="Upload files" onBack={() => (from === 'chat' ? router.navigate('/chat') : router.back())} showMenu />
       <View style={styles.body}>
         <Text variant="displayMD" color="#27272A" accessibilityRole="header">Ready for your files</Text>
         <Text color={colors.textBody} style={{ marginTop: spacing[3] }}>

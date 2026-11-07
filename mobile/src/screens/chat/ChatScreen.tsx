@@ -24,7 +24,10 @@ export function ChatScreen() {
           <View style={styles.chips}>
             <PromptChip label="Make a plan for screenings" onPress={() => router.push('/chat/plan/family-history')} />
             {/* TODO(design): destinations for these two chips are unconfirmed (brief §3.3) — inert. */}
-            <PromptChip label="Upload my health records" />
+            <PromptChip
+              label="Upload my health records"
+              onPress={() => router.push({ pathname: '/records/upload', params: { from: 'chat' } })}
+            />
             <PromptChip label="Understand a medical result" />
           </View>
         </ScrollView>

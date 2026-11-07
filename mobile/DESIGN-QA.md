@@ -8,7 +8,8 @@ Nothing here is claimed pixel-perfect.
 
 | Item | Current behaviour |
 | --- | --- |
-| Home chips "Upload my health records", "Understand a medical result" | Do nothing |
+| Chat chip "Upload my health records" | Opens Upload files (D05); back returns to Zana Chat |
+| Chat chip "Understand a medical result" | Does nothing |
 | Home screening rows (994:6213) | Do nothing; "Find clinic for appointment" opens Find a Clinic |
 | Home chat input | Accepts typing; Send disabled; no AI |
 | Upcoming plan items (B12) | Do nothing |
