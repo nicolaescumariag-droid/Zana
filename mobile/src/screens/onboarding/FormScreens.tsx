@@ -66,6 +66,7 @@ function SocialButton({ icon, label }: { icon: 'group' | 'group74'; label: strin
 }
 
 export function CheckEmailScreen({ onBack, onNext }: Nav) {
+  const { user } = useAppState();
   const [code, setCode] = useState('');
   return (
     <OnboardingSheet onBack={onBack}>
@@ -73,7 +74,7 @@ export function CheckEmailScreen({ onBack, onNext }: Nav) {
         title="Check your email"
         body={
           <>
-            We just sent a temporary identification code to <Text variant="bodyMD" style={{ fontFamily: 'DMSans_600SemiBold' }}>sophie@google.com</Text>
+            We just sent a temporary identification code to <Text variant="bodyMD" style={{ fontFamily: 'DMSans_600SemiBold' }}>{user.email}</Text>
           </>
         }
       />
@@ -132,7 +133,7 @@ export function NameScreen({ onBack, onNext }: Nav) {
   const [name, setName] = useState('');
   const [dob, setDob] = useState('');
   return (
-    <OnboardingSheet onBack={onBack} progress={1} footerContainer footer={<Button label="Next" icon="iconsArrowRight" onPress={() => { setUser({ firstName: name || user.firstName }); onNext(); }} />}>
+    <OnboardingSheet onBack={onBack} progress={1} footerContainer footer={<Button label="Next" icon="iconsArrowRight" onPress={() => { setUser({ firstName: name || user.firstName, age: ageFrom(dob) ?? user.age }); onNext(); }} />}>
       <Heading title="Perfect! Now let's set up your profile." body="What should we call you?" />
       <View style={{ gap: spacing[8] }}>
         <TextField label="First name" placeholder="Sophie" value={name} onChangeText={setName} autoComplete="given-name" />
@@ -165,7 +166,7 @@ export function ConfirmScreen({ onBack, onNext }: Nav) {
         </View>
         <View style={styles.detailRow}>
           <Text variant="labelLG" color="#1D1D1D">AGE</Text>
-          <Text variant="bodyMD" color={colors.textBody}>34 years old</Text>
+          <Text variant="bodyMD" color={colors.textBody}>{`${user.age} years old`}</Text>
         </View>
       </View>
       <Text variant="bodyMD" color={colors.textSecondary} style={{ marginTop: spacing[6] }}>
@@ -213,3 +214,12 @@ const styles = StyleSheet.create({
   detailRow: { padding: spacing[3], gap: spacing[1] },
   goal: { flexDirection: 'row', alignItems: 'center', gap: spacing[2], paddingHorizontal: spacing[4], paddingVertical: spacing[1], minHeight: 52, borderRadius: radius.medium, borderWidth: 1, borderColor: palette.neutral[600], backgroundColor: palette.neutral[100] },
 });
+
+function ageFrom(dob: string): number | undefined {
+  const t = Date.parse(dob);
+  if (Number.isNaN(t)) return undefined;
+  const d = new Date(t);
+  const now = new Date();
+  const age = now.getFullYear() - d.getFullYear() - (now < new Date(now.getFullYear(), d.getMonth(), d.getDate()) ? 1 : 0);
+  return age >= 0 && age < 130 ? age : undefined;
+}

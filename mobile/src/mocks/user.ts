@@ -6,4 +6,5 @@ export const mockUser = {
   ageLabel: '30 yo',
   email: 'sophia@gmail.com',
   firstName: 'Sophie',
+  age: 34,
 };
