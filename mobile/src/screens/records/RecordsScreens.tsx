@@ -8,7 +8,7 @@ import { ProfileHeader } from '@/components/composites/ProfileHeader';
 import { EmptyState, FolderCard, FolderOption } from '@/components/composites/RecordsParts';
 import { Button } from '@/components/primitives/Button';
 import { Text } from '@/components/primitives/Text';
-import { defaultFolders, folderListIcons, folderOptions } from '@/mocks/records';
+import { defaultFolders, folderListIcons, folderOptions, maxFreeFolders } from '@/mocks/records';
 import { useAppState } from '@/state/AppState';
 import { colors, spacing } from '@/tokens';
 
@@ -63,7 +63,8 @@ export function ChooseFolders() {
             name={f.name}
             icon={f.icon}
             checked={picked.includes(f.name)}
-            onToggle={() => setPicked((p) => (p.includes(f.name) ? p.filter((x) => x !== f.name) : [...p, f.name]))}
+            disabled={!picked.includes(f.name) && picked.length >= maxFreeFolders}
+            onToggle={() => setPicked((p) => (p.includes(f.name) ? p.filter((x) => x !== f.name) : p.length < maxFreeFolders ? [...p, f.name] : p))}
           />
         ))}
       </ScrollView>

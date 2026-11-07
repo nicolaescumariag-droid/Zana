@@ -42,9 +42,9 @@ export function EmptyState({ title, body }: { title: string; body: string }) {
   );
 }
 
-export function FolderOption({ name, icon, checked, onToggle }: { name: string; icon: SvgName | 'bone'; checked: boolean; onToggle: () => void }) {
+export function FolderOption({ name, icon, checked, disabled, onToggle }: { name: string; icon: SvgName | 'bone'; checked: boolean; disabled?: boolean; onToggle: () => void }) {
   return (
-    <Pressable accessibilityRole="checkbox" accessibilityState={{ checked }} accessibilityLabel={name} onPress={onToggle} style={styles.option}>
+    <Pressable accessibilityRole="checkbox" accessibilityState={{ checked, disabled }} accessibilityLabel={name} disabled={disabled} onPress={onToggle} style={[styles.option, disabled && { opacity: 0.4 }]}>
       <CheckboxBox checked={checked} />
       <Text color={palette.dark[700]} style={{ flex: 1 }}>{name}</Text>
       <FolderIllustration icon={icon} size={40} />

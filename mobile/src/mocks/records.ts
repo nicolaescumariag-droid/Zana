@@ -21,6 +21,9 @@ export const folderOptions: FolderDef[] = [
 
 export const defaultFolders = ['General', 'Gynaecology', 'Family'];
 
+// Free plan limit; more folders would be paid (paid flow not designed).
+export const maxFreeFolders = 3;
+
 export const folderListIcons: Record<string, SvgName> = { General: 'group2', Gynaecology: 'uterus1', Family: 'add13' };
 
 export const uploadFilters = ['General', 'Gynaecology', 'Bloodwork', 'Breast Health'];
