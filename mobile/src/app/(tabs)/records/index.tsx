@@ -1,5 +1,3 @@
-import { View } from 'react-native';
+import { RecordsHome } from '@/screens/records/RecordsScreens';
 
-export default function Placeholder() {
-  return <View />;
-}
+export default RecordsHome;

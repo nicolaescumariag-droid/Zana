@@ -18,6 +18,8 @@ type AppState = {
   setUser: (u: Partial<typeof mockUser>) => void;
   answers: PlanAnswers;
   setAnswers: (fn: (a: PlanAnswers) => PlanAnswers) => void;
+  folders: string[];
+  setFolders: (f: string[]) => void;
 };
 
 const Ctx = createContext<AppState | null>(null);
@@ -25,9 +27,10 @@ const Ctx = createContext<AppState | null>(null);
 export function AppStateProvider({ children }: { children: ReactNode }) {
   const [user, setUserState] = useState(mockUser);
   const [answers, setAnswers] = useState<PlanAnswers>(emptyAnswers);
+  const [folders, setFolders] = useState<string[]>([]);
   const value = useMemo<AppState>(
-    () => ({ user, setUser: (u) => setUserState((prev) => ({ ...prev, ...u })), answers, setAnswers }),
-    [user, answers],
+    () => ({ user, setUser: (u) => setUserState((prev) => ({ ...prev, ...u })), answers, setAnswers, folders, setFolders }),
+    [user, answers, folders],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }
