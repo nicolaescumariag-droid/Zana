@@ -23,7 +23,10 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <AppStateProvider>
         <StatusBar style="dark" />
-        <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bgScreen } }} />
+        <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bgScreen } }}>
+          <Stack.Screen name="screening/[id]" options={{ animation: 'slide_from_bottom' }} />
+          <Stack.Screen name="screening/cervical" options={{ animation: 'slide_from_bottom' }} />
+        </Stack>
       </AppStateProvider>
     </SafeAreaProvider>
   );

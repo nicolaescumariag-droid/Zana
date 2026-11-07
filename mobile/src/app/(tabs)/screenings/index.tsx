@@ -1,5 +1,3 @@
-import { View } from 'react-native';
+import { ManageScreenings } from '@/screens/screenings/ManageScreenings';
 
-export default function Placeholder() {
-  return <View />;
-}
+export default ManageScreenings;
