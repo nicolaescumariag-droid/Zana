@@ -14,6 +14,7 @@ import { StatusBar } from "expo-status-bar";
 import { Platform, StyleSheet, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
+import { SheetHost } from "@/components/primitives/SheetModal";
 import { AppStateProvider } from "@/state/AppState";
 import { colors } from "@/tokens";
 
@@ -34,21 +35,23 @@ export default function RootLayout() {
         <StatusBar style="dark" />
         <View style={Platform.OS === "web" ? styles.webBackdrop : styles.fill}>
           <View style={Platform.OS === "web" ? styles.webPhone : styles.fill}>
-            <Stack
-              screenOptions={{
-                headerShown: false,
-                contentStyle: { backgroundColor: colors.bgScreen },
-              }}
-            >
-              <Stack.Screen
-                name="screening/[id]"
-                options={{ animation: "slide_from_bottom" }}
-              />
-              <Stack.Screen
-                name="screening/cervical"
-                options={{ animation: "slide_from_bottom" }}
-              />
-            </Stack>
+            <SheetHost>
+              <Stack
+                screenOptions={{
+                  headerShown: false,
+                  contentStyle: { backgroundColor: colors.bgScreen },
+                }}
+              >
+                <Stack.Screen
+                  name="screening/[id]"
+                  options={{ animation: "slide_from_bottom" }}
+                />
+                <Stack.Screen
+                  name="screening/cervical"
+                  options={{ animation: "slide_from_bottom" }}
+                />
+              </Stack>
+            </SheetHost>
           </View>
         </View>
       </AppStateProvider>
