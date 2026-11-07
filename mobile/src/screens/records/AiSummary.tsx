@@ -1,5 +1,5 @@
 // Figma: 881:5161 — AI Summary (E01). Mock, document-scoped explanation only; no live AI.
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
@@ -14,10 +14,13 @@ import { colors, palette, radius, spacing } from '@/tokens';
 
 export function AiSummary() {
   const router = useRouter();
+  const { from } = useLocalSearchParams<{ from?: string }>();
+  // Opened from Folders: close to Zana Chat itself, not whatever chat screen was last open.
+  const close = () => (from === 'folders' ? router.dismissTo('/chat') : router.back());
   // Not in Figma: requested save action. Mock only; nothing is stored.
   const [saved, setSaved] = useState(false);
   return (
-    <DetailSheet onClose={() => router.back()}>
+    <DetailSheet onClose={close}>
       <View style={styles.top}>
         <Asset name="group98" width={72} height={72} />
         <Text variant="labelSM" color={colors.textBody} align="center">{summary.notice}</Text>
