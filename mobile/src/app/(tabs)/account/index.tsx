@@ -1,5 +1,3 @@
-import { View } from 'react-native';
+import { AccountScreen } from '@/screens/account/AccountScreen';
 
-export default function Placeholder() {
-  return <View />;
-}
+export default AccountScreen;

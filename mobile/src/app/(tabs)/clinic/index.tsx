@@ -1,5 +1,3 @@
-import { View } from 'react-native';
+import { FindClinic } from '@/screens/clinic/FindClinic';
 
-export default function Placeholder() {
-  return <View />;
-}
+export default FindClinic;

@@ -19,6 +19,8 @@ type AppState = {
   answers: PlanAnswers;
   setAnswers: (fn: (a: PlanAnswers) => PlanAnswers) => void;
   folders: string[];
+  location: string;
+  setLocation: (l: string) => void;
   setFolders: (f: string[]) => void;
 };
 
@@ -28,9 +30,10 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const [user, setUserState] = useState(mockUser);
   const [answers, setAnswers] = useState<PlanAnswers>(emptyAnswers);
   const [folders, setFolders] = useState<string[]>([]);
+  const [location, setLocation] = useState('15 Saint Clark, Dublin');
   const value = useMemo<AppState>(
-    () => ({ user, setUser: (u) => setUserState((prev) => ({ ...prev, ...u })), answers, setAnswers, folders, setFolders }),
-    [user, answers, folders],
+    () => ({ user, setUser: (u) => setUserState((prev) => ({ ...prev, ...u })), answers, setAnswers, folders, setFolders, location, setLocation }),
+    [user, answers, folders, location],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }
