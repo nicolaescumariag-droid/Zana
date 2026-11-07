@@ -215,10 +215,26 @@ const styles = StyleSheet.create({
   goal: { flexDirection: 'row', alignItems: 'center', gap: spacing[2], paddingHorizontal: spacing[4], paddingVertical: spacing[1], minHeight: 52, borderRadius: radius.medium, borderWidth: 1, borderColor: palette.neutral[600], backgroundColor: palette.neutral[100] },
 });
 
+// Accepts DD/MM/YYYY (Irish format), YYYY-MM-DD, or a month-name date like "Jan 6, 1990"; parsed in local time.
+function parseBirthDate(dob: string): Date | undefined {
+  const v = dob.trim();
+  let m = v.match(/^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$/);
+  if (m) return validDate(+m[3], +m[2] - 1, +m[1]);
+  m = v.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+  if (m) return validDate(+m[1], +m[2] - 1, +m[3]);
+  if (!/[a-z]/i.test(v)) return undefined;
+  const t = Date.parse(v);
+  return Number.isNaN(t) ? undefined : new Date(t);
+}
+
+function validDate(y: number, mo: number, d: number): Date | undefined {
+  const date = new Date(y, mo, d);
+  return date.getFullYear() === y && date.getMonth() === mo && date.getDate() === d ? date : undefined;
+}
+
 function ageFrom(dob: string): number | undefined {
-  const t = Date.parse(dob);
-  if (Number.isNaN(t)) return undefined;
-  const d = new Date(t);
+  const d = parseBirthDate(dob);
+  if (!d) return undefined;
   const now = new Date();
   const age = now.getFullYear() - d.getFullYear() - (now < new Date(now.getFullYear(), d.getMonth(), d.getDate()) ? 1 : 0);
   return age >= 0 && age < 130 ? age : undefined;
