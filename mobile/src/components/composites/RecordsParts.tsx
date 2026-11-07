@@ -99,7 +99,7 @@ export function FileRow({ name, meta, trailing, progress }: FileRowProps) {
 
 const styles = StyleSheet.create({
   empty: { alignItems: 'center', gap: spacing[3], paddingHorizontal: 20 },
-  option: { flexDirection: 'row', alignItems: 'center', gap: spacing[3], height: 52 + 8, paddingHorizontal: spacing[4], borderRadius: radius.medium, borderWidth: 1, borderColor: palette.neutral[600], backgroundColor: palette.neutral[100] },
+  option: { flexDirection: 'row', alignItems: 'center', gap: spacing[3], height: 52, paddingHorizontal: spacing[4], borderRadius: radius.medium, borderWidth: 1, borderColor: palette.neutral[600], backgroundColor: palette.neutral[100] },
   folder: { height: 179, justifyContent: 'center' },
   folderInner: { flexDirection: 'row', alignItems: 'center', gap: 20, paddingLeft: 23, paddingRight: 80, marginTop: -20 },
   folderIcon: { width: 55, height: 55, alignItems: 'center', justifyContent: 'center' },
