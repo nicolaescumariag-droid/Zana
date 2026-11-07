@@ -11,7 +11,7 @@ import {
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { Platform, StyleSheet, View } from "react-native";
+import { Platform, ScrollView, StyleSheet, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { SheetHost } from "@/components/primitives/SheetModal";
@@ -33,7 +33,13 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <AppStateProvider>
         <StatusBar style="dark" />
-        <View style={Platform.OS === "web" ? styles.webBackdrop : styles.fill}>
+        <ScrollView
+          style={styles.fill}
+          contentContainerStyle={
+            Platform.OS === "web" ? styles.webBackdrop : styles.fill
+          }
+          scrollEnabled={Platform.OS === "web"}
+        >
           <View style={Platform.OS === "web" ? styles.webPhone : styles.fill}>
             <SheetHost>
               <Stack
@@ -53,17 +59,18 @@ export default function RootLayout() {
               </Stack>
             </SheetHost>
           </View>
-        </View>
+        </ScrollView>
       </AppStateProvider>
     </SafeAreaProvider>
   );
 }
 
-// Web preview only: show the app in an iPhone-sized frame (390×844) instead of stretching to the window.
+// Web preview only: show the app in a fixed iPhone-sized frame (390×844); the page scrolls if the window is smaller.
 const styles = StyleSheet.create({
   fill: { flex: 1 },
   webBackdrop: {
-    flex: 1,
+    flexGrow: 1,
+    padding: 24,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#E4DED7",
@@ -71,8 +78,7 @@ const styles = StyleSheet.create({
   webPhone: {
     width: 390,
     height: 844,
-    maxWidth: "100%",
-    maxHeight: "100%",
+    flexShrink: 0,
     overflow: "hidden",
     backgroundColor: colors.bgScreen,
     borderRadius: 24,
