@@ -21,10 +21,11 @@ const ITEMS: { key: NavTab; label: string; icon: SvgName }[] = [
 type BottomNavProps = {
   active?: NavTab | null;
   onSelect: (tab: NavTab) => void;
+  onHeart: () => void;
   surface?: string;
 };
 
-export function BottomNav({ active, onSelect, surface = palette.neutral[50] }: BottomNavProps) {
+export function BottomNav({ active, onSelect, onHeart, surface = palette.neutral[50] }: BottomNavProps) {
   const insets = useInsets();
   const item = (i: (typeof ITEMS)[number]) => {
     const selected = active === i.key;
@@ -48,8 +49,7 @@ export function BottomNav({ active, onSelect, surface = palette.neutral[50] }: B
     <View style={[styles.outer, { backgroundColor: surface, paddingBottom: Math.max(20, insets.bottom - 14) }]}>
       <View style={styles.bar} accessibilityRole="tablist">
         {ITEMS.slice(0, 2).map(item)}
-        {/* TODO(design): centre heart behaviour is undefined (brief 6.2 #12) — rendered inert. */}
-        <View style={styles.heart} accessibilityLabel="Zana" accessible>
+        <Pressable style={styles.heart} accessibilityRole="button" accessibilityLabel="Zana Chat" onPress={onHeart}>
           <Svg width={45} height={45} style={StyleSheet.absoluteFill}>
             <Defs>
               <LinearGradient id="zanaHeart" x1="0" y1="0" x2="0" y2="1">
@@ -62,7 +62,7 @@ export function BottomNav({ active, onSelect, surface = palette.neutral[50] }: B
           <View style={{ zIndex: 1 }}>
             <Asset name="group2" width={30} height={27} />
           </View>
-        </View>
+        </Pressable>
         {ITEMS.slice(2).map(item)}
       </View>
     </View>

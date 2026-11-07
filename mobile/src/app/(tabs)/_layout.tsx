@@ -13,9 +13,13 @@ export default function TabsLayout() {
         const current = state.routes[state.index]?.name.split('/')[0] as NavTab;
         return (
           <BottomNav
-            active={TAB_ROUTES.includes(current) && current !== 'home' ? current : null}
+            active={TAB_ROUTES.includes(current) ? current : null}
             onSelect={(tab) => {
               const route = state.routes.find((r) => r.name === tab);
+              if (route) navigateToTab(route.key);
+            }}
+            onHeart={() => {
+              const route = state.routes.find((r) => r.name === 'chat');
               if (route) navigateToTab(route.key);
             }}
           />
@@ -27,6 +31,7 @@ export default function TabsLayout() {
       <Tabs.Screen name="screenings" />
       <Tabs.Screen name="account" />
       <Tabs.Screen name="clinic" />
+      <Tabs.Screen name="chat" />
     </Tabs>
   );
 }

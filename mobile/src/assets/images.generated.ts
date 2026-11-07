@@ -2,6 +2,7 @@
 export const images = {
   ellipse43: require('./images/ellipse43.png'),
   ellipse69: require('./images/ellipse69.png'),
+  group119: require('./images/group119.png'),
   iMG09901: require('./images/iMG09901.jpg'),
   illustrations: require('./images/illustrations.png'),
   illustrations2: require('./images/illustrations2.png'),

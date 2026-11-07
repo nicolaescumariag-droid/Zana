@@ -29,11 +29,11 @@ export function GuidedPlanScreen() {
   const { step, expanded, from } = useLocalSearchParams<{ step: PlanStep; expanded?: string; from?: string }>();
   const { answers, setAnswers } = useAppState();
 
-  const go = (s: PlanStep, params: Record<string, string> = {}) => router.push({ pathname: '/home/plan/[step]', params: { step: s, ...params } });
-  const close = () => router.dismissTo('/home');
+  const go = (s: PlanStep, params: Record<string, string> = {}) => router.push({ pathname: '/chat/plan/[step]', params: { step: s, ...params } });
+  const close = () => router.dismissTo('/chat');
   const back = () => (router.canGoBack() ? router.back() : close());
   const hasChecks = answers.checks.some((c) => c !== 'None of these');
-  const onBuilt = useCallback(() => router.replace({ pathname: '/home/plan/[step]', params: { step: 'result' } }), [router]);
+  const onBuilt = useCallback(() => router.replace({ pathname: '/chat/plan/[step]', params: { step: 'result' } }), [router]);
 
   const q = QUESTION_FOR[step];
   if (q !== undefined) {
@@ -65,7 +65,7 @@ export function GuidedPlanScreen() {
           onEdit={(k) => go(STEP_FOR[k], { from: 'review' })}
           onRestart={() => {
             setAnswers(() => emptyAnswers);
-            router.dismissTo({ pathname: '/home/plan/[step]', params: { step: 'family-history' } });
+            router.dismissTo({ pathname: '/chat/plan/[step]', params: { step: 'family-history' } });
           }}
           onConfirm={() => go('building')}
         />

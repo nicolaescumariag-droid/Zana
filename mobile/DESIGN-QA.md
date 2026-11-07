@@ -9,7 +9,7 @@ Nothing here is claimed pixel-perfect.
 | Item | Current behaviour |
 | --- | --- |
 | Home chips "Upload my health records", "Understand a medical result" | Do nothing |
-| Bottom-nav centre heart | Does nothing |
+| Home screening rows (994:6213) | Do nothing; "Find clinic for appointment" opens Find a Clinic |
 | Home chat input | Accepts typing; Send disabled; no AI |
 | Upcoming plan items (B12) | Do nothing |
 | Calendar / "Booked" / date-change actions (C02–C06, F08 "Add to Calendar") | Do nothing |
@@ -18,6 +18,13 @@ Nothing here is claimed pixel-perfect.
 | Settings rows (G01) except notification toggles and Log Out | Do nothing (not designed) |
 | Screening catalogue selections (C03) | Kept in local state while the app is open; no reminder is created and no due date assigned. Whether a pick should become a reminder, and with what date, is unresolved. |
 | Mock user name | Home uses "Cleo", other frames "Sophia", as in Figma |
+
+## Navigation change (after approval review)
+
+- Home tab shows "04 Home - Existing User 0 of 5 Duplicate" (`994:6213`), which is outside the approved section `881:3355`.
+- The centre heart opens Zana Chat (`881:4014`, route `/chat`); the guided plan moved to `/chat/plan/[step]`.
+- Home copy is verbatim from Figma, including "We 22" (no 21), "Fi" and the repeated "Thyroid check" row; all values are static mocks.
+- The Home cycle art (blurred gradient) is a PNG rendered from the Figma SVG, because react-native-svg does not support its filters.
 
 ## Mocked behaviour
 
