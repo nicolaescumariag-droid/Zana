@@ -33,35 +33,42 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <AppStateProvider>
         <StatusBar style="dark" />
-        <ScrollView
-          style={styles.fill}
-          contentContainerStyle={
-            Platform.OS === "web" ? styles.webBackdrop : styles.fill
-          }
-          scrollEnabled={Platform.OS === "web"}
-        >
-          <View style={Platform.OS === "web" ? styles.webPhone : styles.fill}>
-            <SheetHost>
-              <Stack
-                screenOptions={{
-                  headerShown: false,
-                  contentStyle: { backgroundColor: colors.bgScreen },
-                }}
-              >
-                <Stack.Screen
-                  name="screening/[id]"
-                  options={{ animation: "slide_from_bottom" }}
-                />
-                <Stack.Screen
-                  name="screening/cervical"
-                  options={{ animation: "slide_from_bottom" }}
-                />
-              </Stack>
-            </SheetHost>
-          </View>
-        </ScrollView>
+        {Platform.OS === "web" ? (
+          <ScrollView
+            style={styles.fill}
+            contentContainerStyle={styles.webBackdrop}
+          >
+            <View style={styles.webPhone}>
+              <AppStack />
+            </View>
+          </ScrollView>
+        ) : (
+          <AppStack />
+        )}
       </AppStateProvider>
     </SafeAreaProvider>
+  );
+}
+
+function AppStack() {
+  return (
+    <SheetHost>
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          contentStyle: { backgroundColor: colors.bgScreen },
+        }}
+      >
+        <Stack.Screen
+          name="screening/[id]"
+          options={{ animation: "slide_from_bottom" }}
+        />
+        <Stack.Screen
+          name="screening/cervical"
+          options={{ animation: "slide_from_bottom" }}
+        />
+      </Stack>
+    </SheetHost>
   );
 }
 
