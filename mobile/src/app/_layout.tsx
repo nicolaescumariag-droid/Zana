@@ -84,6 +84,7 @@ const styles = StyleSheet.create({
   },
   webPhone: {
     width: 390,
+    maxWidth: "100%",
     height: 844,
     flexShrink: 0,
     overflow: "hidden",
