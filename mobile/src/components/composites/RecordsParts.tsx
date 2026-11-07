@@ -54,14 +54,16 @@ export function FolderOption({ name, icon, checked, disabled, onToggle }: { name
 
 const CARD_BG: SvgName[] = ['folderCard', 'folderCard2', 'folderCard3'];
 
-export function FolderCard({ index, name, icon, meta, onPress, onAdd }: { index: number; name: string; icon: SvgName; meta: string; onPress: () => void; onAdd?: () => void }) {
+export function FolderCard({ index, name, icon, meta, onPress, onAdd }: { index: number; name: string; icon: SvgName | 'bone'; meta: string; onPress: () => void; onAdd?: () => void }) {
   return (
     <View style={[styles.folder, { marginTop: index === 0 ? 0 : -30 }]}>
       <Asset name={CARD_BG[index % 3]} width="100%" height={179} style={StyleSheet.absoluteFill} />
       <Pressable accessibilityRole="button" accessibilityLabel={`${name} folder`} onPress={onPress} style={styles.folderInner}>
         <View style={styles.folderIcon}>
           <Asset name="ellipse65" width={55} height={55} style={StyleSheet.absoluteFill} />
-          <Asset name={icon} width={34} height={34} />
+          <View style={{ zIndex: 1 }}>
+            <FolderIllustration icon={icon} size={40} />
+          </View>
         </View>
         <View style={{ flex: 1, gap: spacing[1] }}>
           <Text variant="displayMD" color="#27272A">{name}</Text>

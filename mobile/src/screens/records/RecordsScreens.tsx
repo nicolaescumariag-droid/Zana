@@ -8,7 +8,7 @@ import { ProfileHeader } from '@/components/composites/ProfileHeader';
 import { EmptyState, FolderCard, FolderOption } from '@/components/composites/RecordsParts';
 import { Button } from '@/components/primitives/Button';
 import { Text } from '@/components/primitives/Text';
-import { defaultFolders, folderListIcons, folderOptions, maxFreeFolders } from '@/mocks/records';
+import { defaultFolders, folderOptions, maxFreeFolders } from '@/mocks/records';
 import { useAppState } from '@/state/AppState';
 import { colors, spacing } from '@/tokens';
 
@@ -32,7 +32,7 @@ export function RecordsHome() {
               key={f}
               index={i}
               name={f}
-              icon={folderListIcons[f] ?? 'group2'}
+              icon={folderOptions.find((o) => o.name === f)?.icon ?? 'group2'}
               meta={`${i === 0 ? '' : '0'} documents  ·  Last test: Mar 13`}
               onPress={() => router.push({ pathname: '/records/folder/[name]', params: { name: f } })}
               onAdd={() => router.push('/records/upload')}
