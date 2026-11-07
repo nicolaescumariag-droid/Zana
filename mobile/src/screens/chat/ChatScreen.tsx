@@ -28,7 +28,10 @@ export function ChatScreen() {
               label="Upload my health records"
               onPress={() => router.push({ pathname: '/records/upload', params: { from: 'chat' } })}
             />
-            <PromptChip label="Understand a medical result" />
+            <PromptChip
+              label="Understand a medical result"
+              onPress={() => router.push({ pathname: '/records/upload', params: { from: 'chat' } })}
+            />
           </View>
         </ScrollView>
         <View style={styles.input}>
