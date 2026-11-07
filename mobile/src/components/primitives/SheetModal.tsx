@@ -29,6 +29,12 @@ export function SheetModal({ visible, onRequestClose, animationType = 'slide', c
     if (useHost) setHostNode(visible ? children : null);
   });
   useEffect(() => () => setHostNode?.(null), [setHostNode]);
+  useEffect(() => {
+    if (!useHost || !visible) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onRequestClose();
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [useHost, visible, onRequestClose]);
 
   if (useHost) return null;
   return (
