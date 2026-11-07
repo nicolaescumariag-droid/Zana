@@ -16,6 +16,7 @@ Nothing here is claimed pixel-perfect.
 | "Add result" (C04–C07), social sign-in, cycle-app connect | Do nothing |
 | Clinic "Available Services", "Opening Hours", Map toggle | Do nothing (not designed) |
 | Settings rows (G01) except notification toggles and Log Out | Do nothing (not designed) |
+| Screening catalogue selections (C03) | Kept in local state while the app is open; no reminder is created and no due date assigned. Whether a pick should become a reminder, and with what date, is unresolved. |
 | Mock user name | Home uses "Cleo", other frames "Sophia", as in Figma |
 
 ## Mocked behaviour

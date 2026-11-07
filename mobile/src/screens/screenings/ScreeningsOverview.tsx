@@ -1,5 +1,4 @@
 // Figma: 881:4589 — Overview (C03)
-import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { ProfileHeader } from '@/components/composites/ProfileHeader';
@@ -11,8 +10,7 @@ import { useAppState } from '@/state/AppState';
 import { colors, palette, spacing } from '@/tokens';
 
 export function ScreeningsOverview() {
-  const { user } = useAppState();
-  const [picked, setPicked] = useState<string[]>([]);
+  const { user, screeningPicks: picked, setScreeningPicks: setPicked } = useAppState();
   return (
     <View style={{ flex: 1, backgroundColor: colors.bgScreen }}>
       <ProfileHeader name={user.profileName} age={user.ageLabel} />

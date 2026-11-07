@@ -20,6 +20,8 @@ type AppState = {
   setAnswers: (fn: (a: PlanAnswers) => PlanAnswers) => void;
   folders: string[];
   location: string;
+  screeningPicks: string[];
+  setScreeningPicks: (fn: (p: string[]) => string[]) => void;
   setLocation: (l: string) => void;
   setFolders: (f: string[]) => void;
 };
@@ -31,9 +33,11 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   const [answers, setAnswers] = useState<PlanAnswers>(emptyAnswers);
   const [folders, setFolders] = useState<string[]>([]);
   const [location, setLocation] = useState('15 Saint Clark, Dublin');
+  // Selections from C03 only; not turned into reminders (behaviour unresolved, see DESIGN-QA.md).
+  const [screeningPicks, setScreeningPicks] = useState<string[]>([]);
   const value = useMemo<AppState>(
-    () => ({ user, setUser: (u) => setUserState((prev) => ({ ...prev, ...u })), answers, setAnswers, folders, setFolders, location, setLocation }),
-    [user, answers, folders, location],
+    () => ({ user, setUser: (u) => setUserState((prev) => ({ ...prev, ...u })), answers, setAnswers, folders, setFolders, location, setLocation, screeningPicks, setScreeningPicks }),
+    [user, answers, folders, location, screeningPicks],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }
