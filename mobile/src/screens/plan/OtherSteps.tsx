@@ -71,11 +71,11 @@ export function WhenStep({ onPrev, onNext, onClose }: { onPrev: () => void; onNe
 const join = (xs: string[], other?: string) => [...xs, ...(other?.trim() ? [other.trim()] : [])].join(', ') || 'None';
 
 export function summarise(a: PlanAnswers) {
-  const recent =
-    a.checks
-      .filter((c) => c !== 'None of these')
-      .map((c) => (a.when[c] ? `${c}, ${a.when[c].charAt(0).toLowerCase()}${a.when[c].slice(1)}` : c))
-      .join(' · ') || join(a.checks, a.other.checks);
+  const parts = a.checks
+    .filter((c) => c !== 'None of these')
+    .map((c) => (a.when[c] ? `${c}, ${a.when[c].charAt(0).toLowerCase()}${a.when[c].slice(1)}` : c));
+  if (a.other.checks?.trim()) parts.push(a.other.checks.trim());
+  const recent = parts.join(' · ') || join(a.checks);
   return { family: join(a.family, a.other.family), health: join(a.health, a.other.health), recent };
 }
 
