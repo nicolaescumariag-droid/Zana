@@ -14,7 +14,7 @@ export function ChatScreen() {
   const { user } = useAppState();
   return (
     <View style={styles.screen}>
-      <ChatHeader />
+      <ChatHeader onMenu={() => router.push('/chat/history')} />
       <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
           <Text variant="displayLG" color={colors.textDisplay} accessibilityRole="header" style={styles.greeting}>

@@ -6,13 +6,13 @@ import { Text } from '@/components/primitives/Text';
 import { useInsets } from '@/hooks/useInsets';
 import { palette } from '@/tokens';
 
-// TODO(design): menu, settings and notifications destinations are not designed — rendered inert.
-export function ChatHeader({ title = 'Zana Chat' }: { title?: string }) {
+// Menu opens chat history (not in Figma). TODO(design): settings and notifications destinations are not designed — inert.
+export function ChatHeader({ title = 'Zana Chat', onMenu }: { title?: string; onMenu?: () => void }) {
   const insets = useInsets();
   return (
     <View style={[styles.wrap, { paddingTop: insets.top + 18 }]}>
       <View style={styles.side}>
-        <Pressable accessibilityRole="button" accessibilityLabel="Menu" hitSlop={10}>
+        <Pressable accessibilityRole="button" accessibilityLabel="Your chats" hitSlop={10} onPress={onMenu}>
           <Asset name="iconsMenu" width={24} />
         </Pressable>
       </View>
