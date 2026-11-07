@@ -75,7 +75,9 @@ export function ClinicResults() {
         <Toggle value={false} label="Map view" />
       </View>
       <ScrollView contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 32, gap: spacing[3] }}>
-        {clinics.map((c) => (
+        {clinics
+          .filter((c) => !type || c.type === type)
+          .map((c) => (
           <Pressable key={c.name} accessibilityRole="button" accessibilityLabel={`${c.name}, ${c.meta}, ${c.status}`} onPress={() => router.push({ pathname: '/clinic/details', params: { name: c.name } })} style={styles.card}>
             <Photo name={c.photo} contentFit="cover" style={styles.cardPhoto} />
             <View style={styles.cardBody}>
