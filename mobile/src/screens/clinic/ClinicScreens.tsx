@@ -1,6 +1,6 @@
 // Figma: 881:5264 Choose city (F02), 881:5339 Clinic list (F05), 881:5432 Clinic details (F06),
 // 881:5508 Mark as booked (F07), 881:5560 Appointment saved (F08)
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Modal, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 
@@ -12,7 +12,7 @@ import { Text } from '@/components/primitives/Text';
 import { TextField } from '@/components/primitives/TextField';
 import { Toggle } from '@/components/primitives/Toggle';
 import { useInsets } from '@/hooks/useInsets';
-import { clinicDetail, clinics, clinicTypes, nearbyLocation, savedClinic, type Clinic } from '@/mocks/clinics';
+import { bookingDate, clinics, clinicTypes, defaultClinic, defaultScreening, distanceOf, nearbyLocation, savedClinic, type Clinic, type ClinicType } from '@/mocks/clinics';
 import { useAppState } from '@/state/AppState';
 import { colors, fontFamily, palette, radius, spacing } from '@/tokens';
 
@@ -57,10 +57,11 @@ const STATUS_STYLE: Record<Clinic['status'], { color: string; icon: 'iconsClock3
 
 export function ClinicResults() {
   const router = useRouter();
-  const [type, setType] = useState<string | null>(null);
+  const { screening } = useLocalSearchParams<{ screening?: string }>();
+  const [type, setType] = useState<ClinicType | null>(null);
   return (
     <View style={styles.screen}>
-      <BackHeader title="Clinics for Blood panel" onBack={() => router.back()} showMenu />
+      <BackHeader title={`Clinics for ${screening ?? defaultScreening}`} onBack={() => router.back()} showMenu />
       <View style={styles.filters}>
         {clinicTypes.map((t) => (
           <Pressable key={t} accessibilityRole="button" accessibilityState={{ selected: type === t }} onPress={() => setType(type === t ? null : t)} style={[styles.chip, type === t && { borderColor: palette.dark[900] }]}>
@@ -75,7 +76,7 @@ export function ClinicResults() {
       </View>
       <ScrollView contentContainerStyle={{ paddingHorizontal: 20, paddingBottom: 32, gap: spacing[3] }}>
         {clinics.map((c) => (
-          <Pressable key={c.name} accessibilityRole="button" accessibilityLabel={`${c.name}, ${c.meta}, ${c.status}`} onPress={() => router.push('/clinic/details')} style={styles.card}>
+          <Pressable key={c.name} accessibilityRole="button" accessibilityLabel={`${c.name}, ${c.meta}, ${c.status}`} onPress={() => router.push({ pathname: '/clinic/details', params: { name: c.name } })} style={styles.card}>
             <Photo name={c.photo} contentFit="cover" style={styles.cardPhoto} />
             <View style={styles.cardBody}>
               <Text variant="bodyLGBold" color="#27272A">{c.name}</Text>
@@ -98,20 +99,22 @@ export function ClinicResults() {
 export function ClinicDetails() {
   const router = useRouter();
   const insets = useInsets();
+  const { name } = useLocalSearchParams<{ name?: string }>();
+  const clinic = clinics.find((c) => c.name === name) ?? defaultClinic;
   const [sheet, setSheet] = useState(false);
   return (
     <View style={styles.screen}>
       <BackHeader title="Clinic Details" onBack={() => router.back()} showMenu />
       <ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 32 }}>
-        <Photo name={clinicDetail.photo} contentFit="cover" style={styles.hero} />
-        <Text variant="headingXL" color="#27272A" style={{ marginTop: spacing[6] }} accessibilityRole="header">{clinicDetail.name}</Text>
+        <Photo name={clinic.photo} contentFit="cover" style={styles.hero} />
+        <Text variant="headingXL" color="#27272A" style={{ marginTop: spacing[6] }} accessibilityRole="header">{clinic.name}</Text>
         <View style={[styles.inline, { marginTop: spacing[2] }]}>
           <Asset name="iconsLocation2" width={16} />
-          <Text variant="labelMD" color={palette.dark[400]}>{clinicDetail.address}</Text>
+          <Text variant="labelMD" color={palette.dark[400]}>{clinic.address}</Text>
         </View>
-        <View style={[styles.inline, { marginTop: spacing[1] }]} accessible accessibilityLabel={`Rated 4.2, ${clinicDetail.distance}`}>
-          <Asset name="frame1686560378" width={98} height={17} />
-          <Text variant="labelMD" color={palette.dark[400]}>{`${clinicDetail.rating} ${clinicDetail.distance}`}</Text>
+        <View style={[styles.inline, { marginTop: spacing[1] }]} accessible accessibilityLabel={clinic.rating ? `Rated ${clinic.rating}, ${distanceOf(clinic)}` : distanceOf(clinic)}>
+          {clinic.rating ? <Asset name="frame1686560378" width={98} height={17} /> : null}
+          <Text variant="labelMD" color={palette.dark[400]}>{clinic.rating ? `(${clinic.rating}) • ${distanceOf(clinic)}` : distanceOf(clinic)}</Text>
         </View>
         <View style={{ marginTop: spacing[8] }}>
           {/* TODO(design): services and hours detail screens not designed — rows inert. */}
@@ -132,9 +135,9 @@ export function ClinicDetails() {
             </Pressable>
             <Text variant="displayMD" color="#27272A" align="center">You made your appointment?</Text>
             <Text variant="bodyMD" color={colors.textBody} align="center">Add it here and marked as booked, and we will remind you about it.</Text>
-            <TextField label="Date & time" placeholder={clinicDetail.booking.date} trailingIcon="iconsCalendar" />
-            <TextField label="Clinic" placeholder={clinicDetail.name} />
-            <Button label="Mark as booked" onPress={() => { setSheet(false); router.push('/clinic/saved'); }} />
+            <TextField label="Date & time" placeholder={bookingDate} trailingIcon="iconsCalendar" />
+            <TextField label="Clinic" placeholder={clinic.name} />
+            <Button label="Mark as booked" onPress={() => { setSheet(false); router.push({ pathname: '/clinic/saved', params: { name: clinic.name } }); }} />
           </View>
         </View>
       </Modal>
@@ -144,6 +147,7 @@ export function ClinicDetails() {
 
 export function AppointmentSaved() {
   const router = useRouter();
+  const { name } = useLocalSearchParams<{ name?: string }>();
   return (
     <View style={styles.screen}>
       <BackHeader title="Clinic Details" onBack={() => router.back()} showMenu />
@@ -154,7 +158,7 @@ export function AppointmentSaved() {
           <Asset name="group23" width={50.7} height={40} style={{ position: 'absolute', left: 14.6, top: 24 }} />
         </View>
         <Text variant="headingLG" color="#27272A" style={{ marginTop: spacing[6] }}>Appointment Saved</Text>
-        <Text variant="bodyMD" color={colors.textBody}>{savedClinic}</Text>
+        <Text variant="bodyMD" color={colors.textBody}>{name ?? savedClinic}</Text>
         {/* TODO(design): calendar integration out of scope — inert. */}
         <Button label="Add to Calendar" icon="iconsArrowRight" style={{ alignSelf: 'stretch', marginTop: spacing[8] }} />
       </View>

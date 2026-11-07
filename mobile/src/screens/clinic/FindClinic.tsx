@@ -36,7 +36,7 @@ export function FindClinic() {
             <Text variant="bodyMD" color={colors.textBody}>{screening}</Text>
           </Pressable>
         </View>
-        <Button label="Search" icon="iconsArrowRight" onPress={() => router.push('/clinic/results')} style={{ marginTop: spacing[4] }} />
+        <Button label="Search" icon="iconsArrowRight" onPress={() => router.push({ pathname: '/clinic/results', params: { screening } })} style={{ marginTop: spacing[4] }} />
         <Pressable accessibilityRole="button" onPress={() => setPermission(true)} style={styles.near}>
           <Text color={colors.textBody}>Find near you</Text>
         </Pressable>
@@ -56,7 +56,7 @@ export function FindClinic() {
                     s === 'scheduled' ? (
                       <Button label="Calendar" size="inline" variant="secondary" icon="iconsCalendarPlus" />
                     ) : (
-                      <Button label="Find clinic" size="inline" onPress={() => { setScreening(r.title); router.push('/clinic/results'); }} />
+                      <Button label="Find clinic" size="inline" onPress={() => { setScreening(r.title); router.push({ pathname: '/clinic/results', params: { screening: r.title } }); }} />
                     )
                   }
                 />
