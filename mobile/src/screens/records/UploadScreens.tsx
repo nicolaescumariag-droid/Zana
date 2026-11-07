@@ -169,7 +169,7 @@ export function UploadedScreen() {
           name={document.mediumName}
           meta={`${document.size} ·`}
           trailing={
-            <Pressable accessibilityRole="button" accessibilityLabel="Explain this document with AI" onPress={() => router.push('/records/summary')}>
+            <Pressable accessibilityRole="button" accessibilityLabel="Explain this document with AI" onPress={() => router.push('/chat/summary', { withAnchor: true })}>
               <Svg width={28} height={28}>
                 <Defs>
                   <LinearGradient id="ai" x1="0" y1="0" x2="1" y2="1">
