@@ -1,17 +1,21 @@
 // Figma: 881:5161 — AI Summary (E01). Mock, document-scoped explanation only; no live AI.
 import { useRouter } from 'expo-router';
+import { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import { DetailSheet } from '@/components/composites/DetailSheet';
 import { FileRow } from '@/components/composites/RecordsParts';
 import { Badge } from '@/components/composites/ScreeningParts';
 import { Asset } from '@/components/primitives/Asset';
+import { Button } from '@/components/primitives/Button';
 import { Text } from '@/components/primitives/Text';
 import { document, summary } from '@/mocks/records';
 import { colors, palette, radius, spacing } from '@/tokens';
 
 export function AiSummary() {
   const router = useRouter();
+  // Not in Figma: requested save action. Mock only; nothing is stored.
+  const [saved, setSaved] = useState(false);
   return (
     <DetailSheet onClose={() => router.back()}>
       <View style={styles.top}>
@@ -33,6 +37,7 @@ export function AiSummary() {
           </View>
         ))}
       </View>
+      <Button label={saved ? 'Saved' : 'Save information'} disabled={saved} onPress={() => setSaved(true)} style={{ marginTop: spacing[6] }} />
       <View style={{ gap: spacing[2], marginTop: spacing[6] }}>
         <Asset name="group114" width={67} height={14} />
         <Pressable accessibilityRole="button" onPress={() => router.push('/clinic')} style={[styles.chip, { backgroundColor: palette.purple[500] }]}>

@@ -17,6 +17,7 @@ Nothing here is claimed pixel-perfect.
 | Clinic "Available Services", "Opening Hours", Map toggle | Do nothing (not designed) |
 | Settings rows (G01) except notification toggles and Log Out | Do nothing (not designed) |
 | Screening catalogue selections (C03) | Kept in local state while the app is open; no reminder is created and no due date assigned. Whether a pick should become a reminder, and with what date, is unresolved. |
+| AI Summary save (E01) | Added on request (not in Figma): "Save information" button; changes to "Saved" but stores nothing. |
 | Folder limit (D02) | Up to 3 folders can be chosen; other options are disabled once 3 are ticked. More than 3 would be paid, but there is no paid/upgrade design, so nothing is shown. |
 | Mock user name | Home uses "Cleo", other frames "Sophia", as in Figma |
 
