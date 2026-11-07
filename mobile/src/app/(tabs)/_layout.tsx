@@ -26,6 +26,7 @@ export default function TabsLayout() {
       <Tabs.Screen name="records" />
       <Tabs.Screen name="screenings" />
       <Tabs.Screen name="account" />
+      <Tabs.Screen name="clinic" options={{ href: null }} />
     </Tabs>
   );
 }

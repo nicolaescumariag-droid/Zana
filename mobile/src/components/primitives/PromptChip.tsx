@@ -1,20 +1,21 @@
 // Figma: Prompt Chip 894:555 — https://www.figma.com/design/Eo7DWsANnIc4IbnsYmrZX9?node-id=894-555
-import { Pressable, StyleSheet } from 'react-native';
+import { Pressable, StyleSheet, type StyleProp, type ViewStyle } from 'react-native';
 
 import { palette, spacing } from '@/tokens';
 
 import { Asset } from './Asset';
 import { Text } from './Text';
 
-type PromptChipProps = { label: string; onPress?: () => void; accessibilityHint?: string };
+type PromptChipProps = { label: string; onPress?: () => void; accessibilityHint?: string; style?: StyleProp<ViewStyle> };
 
-export function PromptChip({ label, onPress, accessibilityHint }: PromptChipProps) {
+export function PromptChip({ label, onPress, accessibilityHint, style }: PromptChipProps) {
   return (
     <Pressable
       accessibilityRole="button"
       accessibilityHint={accessibilityHint}
       onPress={onPress}
-      style={({ pressed }) => [styles.chip, pressed && { backgroundColor: palette.neutral[300] }]}
+      disabled={!onPress}
+      style={({ pressed }) => [styles.chip, pressed && { backgroundColor: palette.neutral[300] }, style]}
     >
       <Asset name="icon" width={20} />
       <Text color={palette.wireframe.textPrimary}>{label}</Text>

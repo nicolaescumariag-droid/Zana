@@ -59,7 +59,9 @@ export function BottomNav({ active, onSelect, surface = palette.neutral[50] }: B
             </Defs>
             <Rect width={45} height={45} rx={22.5} fill="url(#zanaHeart)" />
           </Svg>
-          <Asset name="group2" width={30} height={27} />
+          <View style={{ zIndex: 1 }}>
+            <Asset name="group2" width={30} height={27} />
+          </View>
         </View>
         {ITEMS.slice(2).map(item)}
       </View>
