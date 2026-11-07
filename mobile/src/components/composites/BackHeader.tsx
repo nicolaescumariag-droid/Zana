@@ -4,7 +4,6 @@ import { Pressable, StyleSheet, View } from 'react-native';
 import { Asset } from '@/components/primitives/Asset';
 import { Text } from '@/components/primitives/Text';
 import { useInsets } from '@/hooks/useInsets';
-import { palette } from '@/tokens';
 
 type BackHeaderProps = { title: string; onBack: () => void; showMenu?: boolean };
 

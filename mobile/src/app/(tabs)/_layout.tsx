@@ -10,7 +10,7 @@ export default function TabsLayout() {
     <Tabs
       screenOptions={{ headerShown: false, sceneStyle: { backgroundColor: colors.bgScreen } }}
       tabBar={({ state, navigateToTab }) => {
-        const current = state.routes[state.index]?.name as NavTab;
+        const current = state.routes[state.index]?.name.split('/')[0] as NavTab;
         return (
           <BottomNav
             active={TAB_ROUTES.includes(current) && current !== 'home' ? current : null}
@@ -26,7 +26,7 @@ export default function TabsLayout() {
       <Tabs.Screen name="records" />
       <Tabs.Screen name="screenings" />
       <Tabs.Screen name="account" />
-      <Tabs.Screen name="clinic" options={{ href: null }} />
+      <Tabs.Screen name="clinic" />
     </Tabs>
   );
 }
